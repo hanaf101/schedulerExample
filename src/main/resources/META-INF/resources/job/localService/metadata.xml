@@ -1,0 +1,1648 @@
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" Version="1.0">
+	<edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="1.0">
+		<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="default">
+			<EntityType Name="CvGstr1AT">
+				<Key>
+					<PropertyRef Name="CodeHSNorSAC"/>
+					<PropertyRef Name="FinancialPeriod"/>
+					<PropertyRef Name="InvoiceNumber"/>
+					<PropertyRef Name="SupplierGSTIN"/>
+					<PropertyRef Name="TransactionID"/>
+				</Key>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CcAmendFlag" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Amendment Flag"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CgstAmount" Type="Edm.Double" Nullable="true" sap:label="CGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CgstRate" Type="Edm.Double" Nullable="true" sap:label="CGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CheckSum" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Checksum"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CodeHSNorSAC" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="HSN/SAC Code"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="Currency" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Currency"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CustomerGSTIN" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Customer GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CustomerName" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Customer Name"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="FinancialPeriod" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Financial Period"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="IgstAmount" Type="Edm.Double" Nullable="true" sap:label="IGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="IgstRate" Type="Edm.Double" Nullable="true" sap:label="IGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceAmount" Type="Edm.Double" Nullable="true" sap:label="Invoice Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceDate" Type="Edm.DateTime" Nullable="true" sap:label="Invoice Date"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceFlag" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Invoice Flag"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceNumber" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Invoice Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ItemType" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Item Type"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ReceiverState" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Recipient State"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="RefInvoiceDate" Type="Edm.DateTime" Nullable="true"
+					sap:label="Reference Invoice Date"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="RefInvoiceNumber" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Reference Invoice Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SgstAmount" Type="Edm.Double" Nullable="true" sap:label="SGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SgstRate" Type="Edm.Double" Nullable="true" sap:label="SGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SupplierGSTIN" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Supplier GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TaxableAmount" Type="Edm.Double" Nullable="true" sap:label="Taxable Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TransactionID" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Transaction ID"/>
+			</EntityType>
+			<EntityType Name="CvGstr1B2B">
+				<Key>
+					<PropertyRef Name="CodeHSNorSAC"/>
+					<PropertyRef Name="FinancialPeriod"/>
+					<PropertyRef Name="InvoiceNumber"/>
+					<PropertyRef Name="ItemNumber"/>
+					<PropertyRef Name="SupplierGSTIN"/>
+					<PropertyRef Name="TransactionID"/>
+				</Key>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CcAmendFlag" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Amendment Flag"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CgstAmount" Type="Edm.Double" Nullable="true" sap:label="CGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CgstRate" Type="Edm.Double" Nullable="true" sap:label="CGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CheckSum" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Checksum"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CodeHSNorSAC" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="HSN/SAC Code"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="Currency" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Currency"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CustomerGSTIN" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Customer GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="FinancialPeriod" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Financial Period"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="IgstAmount" Type="Edm.Double" Nullable="true" sap:label="IGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="IgstRate" Type="Edm.Double" Nullable="true" sap:label="IGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceAmount" Type="Edm.Double" Nullable="true" sap:label="Invoice Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceDate" Type="Edm.DateTime" Nullable="true" sap:label="Invoice Date"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceFlag" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Invoice Flag"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceNumber" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Invoice Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ItemFlag" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Item Flag"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ItemNumber" Type="Edm.Int32" Nullable="false" sap:label="Item Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ItemType" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Item Type"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="Pos" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Place of Supply"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ProvAsesmnt" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Provisional Assessment"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="RefInvoiceDate" Type="Edm.DateTime" Nullable="true"
+					sap:label="Reference Invoice Date"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="RefInvoiceNumber" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Reference Invoice Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ReverseCharge" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Reverse Charge"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SgstAmount" Type="Edm.Double" Nullable="true" sap:label="SGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SgstRate" Type="Edm.Double" Nullable="true" sap:label="SGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SupplierGSTIN" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Supplier GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TaxableAmount" Type="Edm.Double" Nullable="true" sap:label="Taxable Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TransactionID" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Transaction ID"/>
+			</EntityType>
+			<EntityType Name="CvGstr1B2CL">
+				<Key>
+					<PropertyRef Name="CodeHSNorSAC"/>
+					<PropertyRef Name="FinancialPeriod"/>
+					<PropertyRef Name="InvoiceNumber"/>
+					<PropertyRef Name="ItemNumber"/>
+					<PropertyRef Name="SupplierGSTIN"/>
+					<PropertyRef Name="TransactionID"/>
+				</Key>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CcAmendFlag" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Amendment Flag"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CgstAmount" Type="Edm.Double" Nullable="true" sap:label="CGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CgstRate" Type="Edm.Double" Nullable="true" sap:label="CGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CheckSum" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Checksum"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CodeHSNorSAC" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="HSN/SAC Code"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CustomerName" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Customer Name"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="FinancialPeriod" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Financial Period"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="IgstAmount" Type="Edm.Double" Nullable="true" sap:label="IGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="IgstRate" Type="Edm.Double" Nullable="true" sap:label="IGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceAmount" Type="Edm.Double" Nullable="true" sap:label="Invoice Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceDate" Type="Edm.DateTime" Nullable="true" sap:label="Invoice Date"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceFlag" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Invoice Flag"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceNumber" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Invoice Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ItemFlag" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Item Flag"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ItemNumber" Type="Edm.Int32" Nullable="false" sap:label="Item Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ItemType" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Item Type"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="Pos" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Place of Supply"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ProvAsesmnt" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Provisional Assessment"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ReceiverState" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Recipient State"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="RefInvoiceDate" Type="Edm.DateTime" Nullable="true"
+					sap:label="Reference Invoice Date"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="RefInvoiceNumber" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Reference Invoice Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SgstAmount" Type="Edm.Double" Nullable="true" sap:label="SGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SgstRate" Type="Edm.Double" Nullable="true" sap:label="SGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SupplierGSTIN" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Supplier GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TaxableAmount" Type="Edm.Double" Nullable="true" sap:label="Taxable Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TransactionID" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Transaction ID"/>
+			</EntityType>
+			<EntityType Name="CvGstr1B2CS">
+				<Key>
+					<PropertyRef Name="CodeHSNorSAC"/>
+					<PropertyRef Name="FinancialPeriod"/>
+					<PropertyRef Name="InvoiceNumber"/>
+					<PropertyRef Name="SupplierGSTIN"/>
+					<PropertyRef Name="TransactionID"/>
+				</Key>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CcAmendFlag" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Amendment Flag"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CgstAmount" Type="Edm.Double" Nullable="true" sap:label="CGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CgstRate" Type="Edm.Double" Nullable="true" sap:label="CGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CheckSum" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Checksum"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CodeHSNorSAC" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="HSN/SAC Code"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="Currency" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Currency"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="FinancialPeriod" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Financial Period"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="IgstAmount" Type="Edm.Double" Nullable="true" sap:label="IGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="IgstRate" Type="Edm.Double" Nullable="true" sap:label="IGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceNumber" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Invoice Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ItemType" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Item Type"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ProvAsesmnt" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Provisional Assessment"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SgstAmount" Type="Edm.Double" Nullable="true" sap:label="SGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SgstRate" Type="Edm.Double" Nullable="true" sap:label="SGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="StateCode" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="State Code"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SupplierGSTIN" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Supplier GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TaxableAmount" Type="Edm.Double" Nullable="true" sap:label="Taxable Amount"/>
+				<Property Name="TransactionID" Type="Edm.String" Nullable="false" MaxLength="255"/>
+			</EntityType>
+			<EntityType Name="CvGstr1B2CSSummary">
+				<Key>
+					<PropertyRef Name="CodeHSNorSAC"/>
+					<PropertyRef Name="FinancialPeriod"/>
+					<PropertyRef Name="SupplierGSTIN"/>
+					<PropertyRef Name="TransactionID"/>
+				</Key>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CcAmendFlag" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Amendment Flag"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CgstAmount" Type="Edm.Double" Nullable="true" sap:label="CGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CgstRate" Type="Edm.Double" Nullable="true" sap:label="CGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CheckSum" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Checksum"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CodeHSNorSAC" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="HSN/SAC Code"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="Currency" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Currency"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="FinancialPeriod" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Financial Period"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="IgstAmount" Type="Edm.Double" Nullable="true" sap:label="IGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="IgstRate" Type="Edm.Double" Nullable="true" sap:label="IGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ItemType" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Item Type"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ProvAsesmnt" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Provisional Assessment"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SgstAmount" Type="Edm.Double" Nullable="true" sap:label="SGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SgstRate" Type="Edm.Double" Nullable="true" sap:label="SGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="StateCode" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="State Code"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SupplierGSTIN" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Supplier GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TaxableAmount" Type="Edm.Double" Nullable="true" sap:label="Taxable Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TransactionID" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Transaction ID"/>
+			</EntityType>
+			<EntityType Name="CvGstr1CDN">
+				<Key>
+					<PropertyRef Name="CdnNumber"/>
+					<PropertyRef Name="FinancialPeriod"/>
+					<PropertyRef Name="InvoiceNumber"/>
+					<PropertyRef Name="SupplierGSTIN"/>
+					<PropertyRef Name="TransactionID"/>
+				</Key>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CcAmendFlag" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Amendment Flag"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CcNoteType" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Type of Note"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CdnInvoiceDate" Type="Edm.DateTime" Nullable="true" sap:label="Note Date"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CdnNumber" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Note Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CgstAmount" Type="Edm.Double" Nullable="true" sap:label="CGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CgstRate" Type="Edm.Double" Nullable="true" sap:label="CGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CrtOrDbtReasonCode" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Credit/Debit Reason Code"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="Currency" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Currency"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CustomerGSTIN" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Customer GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CustomerName" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Customer Name"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="FinancialPeriod" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Financial Period"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="IgstAmount" Type="Edm.Double" Nullable="true" sap:label="IGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="IgstRate" Type="Edm.Double" Nullable="true" sap:label="IGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceAmount" Type="Edm.Double" Nullable="true" sap:label="Invoice Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceDate" Type="Edm.DateTime" Nullable="true" sap:label="Invoice Date"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceFlag" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Invoice Flag"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceNumber" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Invoice Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceType" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Type of Invoice"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="RefInvoiceDate" Type="Edm.DateTime" Nullable="true"
+					sap:label="Reference Invoice Date"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="RefInvoiceNumber" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Reference Invoice Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SgstAmount" Type="Edm.Double" Nullable="true" sap:label="SGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SgstRate" Type="Edm.Double" Nullable="true" sap:label="SGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SupplierGSTIN" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Supplier GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TaxableAmount" Type="Edm.Double" Nullable="true" sap:label="Taxable Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TransactionID" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Transaction ID"/>
+			</EntityType>
+			<EntityType Name="CvGstr1ECOM">
+				<Key>
+					<PropertyRef Name="CodeHSNorSAC"/>
+					<PropertyRef Name="EcomMerchantId"/>
+					<PropertyRef Name="FinancialPeriod"/>
+					<PropertyRef Name="SupplierGSTIN"/>
+					<PropertyRef Name="TransactionID"/>
+				</Key>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CcAmendFlag" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Amendment Flag"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CgstAmount" Type="Edm.Double" Nullable="true" sap:label="CGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CgstRate" Type="Edm.Double" Nullable="true" sap:label="CGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CodeHSNorSAC" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="HSN/SAC Code"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="Currency" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Currency"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="EcomCustGSTIN" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="e-commerce portal GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="EcomMerchantId" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="e-commerce portal Merchant ID "/>
+				<Property Name="EcomType" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="FinancialPeriod" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Financial Period"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="IgstAmount" Type="Edm.Double" Nullable="true" sap:label="IGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="IgstRate" Type="Edm.Double" Nullable="true" sap:label="IGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceAmount" Type="Edm.Double" Nullable="true" sap:label="Invoice Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceType" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Type of Invoice"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ItemType" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Item Type"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SgstAmount" Type="Edm.Double" Nullable="true" sap:label="SGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SgstRate" Type="Edm.Double" Nullable="true" sap:label="SGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SupplierGSTIN" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Supplier GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TaxableAmount" Type="Edm.Double" Nullable="true" sap:label="Taxable Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TransactionID" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Transaction ID"/>
+			</EntityType>
+			<EntityType Name="CvGstr1Exp">
+				<Key>
+					<PropertyRef Name="CodeHSNorSAC"/>
+					<PropertyRef Name="FinancialPeriod"/>
+					<PropertyRef Name="InvoiceNumber"/>
+					<PropertyRef Name="SupplierGSTIN"/>
+					<PropertyRef Name="TransactionID"/>
+				</Key>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CcAmendFlag" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Amendment Flag"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CcExpType" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Type of Export"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CgstAmount" Type="Edm.Double" Nullable="true" sap:label="CGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CgstRate" Type="Edm.Double" Nullable="true" sap:label="CGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CheckSum" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Checksum"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CodeHSNorSAC" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="HSN/SAC Code"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="Currency" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Currency"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="FinancialPeriod" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Financial Period"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="IgstAmount" Type="Edm.Double" Nullable="true" sap:label="IGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="IgstRate" Type="Edm.Double" Nullable="true" sap:label="IGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceAmount" Type="Edm.Double" Nullable="true" sap:label="Invoice Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceDate" Type="Edm.DateTime" Nullable="true" sap:label="Invoice Date"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceFlag" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Invoice Flag"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceNumber" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Invoice Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ItemType" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Item Type"/>
+				<Property Name="RefInvoiceDate" Type="Edm.DateTime" Nullable="true"/>
+				<Property Name="RefInvoiceNumber" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SgstAmount" Type="Edm.Double" Nullable="true" sap:label="SGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SgstRate" Type="Edm.Double" Nullable="true" sap:label="SGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ShipBillDate" Type="Edm.DateTime" Nullable="true"
+					sap:label="Shipping Bill Date"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ShipBillNumber" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Shipping Bill Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SupplierGSTIN" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Supplier GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TaxableAmount" Type="Edm.Double" Nullable="true" sap:label="Taxable Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TransactionID" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Transaction ID"/>
+			</EntityType>
+			<EntityType Name="CvGstr1InvNR">
+				<Key>
+					<PropertyRef Name="FinancialPeriod"/>
+					<PropertyRef Name="SupplierGSTIN"/>
+				</Key>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="FinancialPeriod" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Financial Period"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="FromNum" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="From Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="NetIssuedInvoice" Type="Edm.Int32" Nullable="true"
+					sap:label="Net number of invoices issued"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="NoOfCancelInvoice" Type="Edm.Int32" Nullable="true"
+					sap:label="Number of cancelled invoices"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="NumberRangeSeries" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Series number of invoices"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SupplierGSTIN" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Supplier GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ToNum" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="To Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TotalInvoice" Type="Edm.Int32" Nullable="true"
+					sap:label="Total number of invoices"/>
+			</EntityType>
+			<EntityType Name="CvGstr1Nil">
+				<Key>
+					<PropertyRef Name="FinancialPeriod"/>
+					<PropertyRef Name="InvoiceNumber"/>
+					<PropertyRef Name="NilInvoiceType"/>
+					<PropertyRef Name="SupplierGSTIN"/>
+					<PropertyRef Name="TransactionID"/>
+				</Key>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CcSupplyType" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Type of Supply"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CgstAmount" Type="Edm.Double" Nullable="true" sap:label="CGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="Currency" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Currency"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="FinancialPeriod" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Financial Period"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="IgstAmount" Type="Edm.Double" Nullable="true" sap:label="IGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceAmount" Type="Edm.Double" Nullable="true" sap:label="Invoice Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceNumber" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Invoice Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ItemType" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Item Type"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="NilInvoiceType" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Invoice Type"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SgstAmount" Type="Edm.Double" Nullable="true" sap:label="SGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SupplierGSTIN" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Supplier GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TaxableAmount" Type="Edm.Double" Nullable="true" sap:label="Taxable Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TransactionID" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Transaction ID"/>
+			</EntityType>
+			<EntityType Name="CvGstr1NilSummary">
+				<Key>
+					<PropertyRef Name="FinancialPeriod"/>
+					<PropertyRef Name="NilInvoiceType"/>
+					<PropertyRef Name="SupplierGSTIN"/>
+					<PropertyRef Name="TransactionID"/>
+				</Key>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CcSupplyType" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Type of Supply"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CgstAmount" Type="Edm.Double" Nullable="true" sap:label="CGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="Currency" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Currency"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="FinancialPeriod" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Financial Period"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="IgstAmount" Type="Edm.Double" Nullable="true" sap:label="IGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceAmount" Type="Edm.Double" Nullable="true" sap:label="Invoice Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ItemType" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Item Type"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="NilInvoiceType" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Invoice Type"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SgstAmount" Type="Edm.Double" Nullable="true" sap:label="SGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SupplierGSTIN" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Supplier GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TaxableAmount" Type="Edm.Double" Nullable="true" sap:label="Taxable Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TransactionID" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Transaction ID"/>
+			</EntityType>
+			<EntityType Name="CvGstr1TXPD">
+				<Key>
+					<PropertyRef Name="AdvInvoiceNumber"/>
+					<PropertyRef Name="FinancialPeriod"/>
+					<PropertyRef Name="LinkInvoiceNumber"/>
+					<PropertyRef Name="SupplierGSTIN"/>
+					<PropertyRef Name="TransactionID"/>
+				</Key>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="AdvInvoiceDate" Type="Edm.DateTime" Nullable="true"
+					sap:label="Advance Invoice Date"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="AdvInvoiceNumber" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Advance Invoice Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CgstAmount" Type="Edm.Double" Nullable="true" sap:label="CGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CgstRate" Type="Edm.Double" Nullable="true" sap:label="CGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CheckSum" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Checksum"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="Currency" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Currency"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="FinancialPeriod" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Financial Period"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="IgstAmount" Type="Edm.Double" Nullable="true" sap:label="IGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="IgstRate" Type="Edm.Double" Nullable="true" sap:label="IGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceFlag" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Invoice Flag"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="LinkInvoiceNumber" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Link Invoice Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SgstAmount" Type="Edm.Double" Nullable="true" sap:label="SGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SgstRate" Type="Edm.Double" Nullable="true" sap:label="SGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SuppInvoiceNumber" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Supplier Invoice Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SupplierGSTIN" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Supplier GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TaxableAmount" Type="Edm.Double" Nullable="true" sap:label="Taxable Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TransactionID" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Transaction ID"/>
+			</EntityType>
+			<EntityType Name="CvGstr1aB2B">
+				<Key>
+					<PropertyRef Name="CodeHSNorSAC"/>
+					<PropertyRef Name="FinancialPeriod"/>
+					<PropertyRef Name="InvoiceNumber"/>
+					<PropertyRef Name="ItemNumber"/>
+					<PropertyRef Name="SupplierGSTIN"/>
+					<PropertyRef Name="TransactionID"/>
+				</Key>
+				<Property Name="CcAmendFlag" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="CgstAmount" Type="Edm.Double" Nullable="true"/>
+				<Property Name="CgstRate" Type="Edm.Double" Nullable="true"/>
+				<Property Name="CheckSum" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="CodeHSNorSAC" Type="Edm.String" Nullable="false" MaxLength="255"/>
+				<Property Name="Currency" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="CustomerGSTIN" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="FinancialPeriod" Type="Edm.String" Nullable="false" MaxLength="255"/>
+				<Property Name="IgstAmount" Type="Edm.Double" Nullable="true"/>
+				<Property Name="IgstRate" Type="Edm.Double" Nullable="true"/>
+				<Property Name="InvoiceAmount" Type="Edm.Double" Nullable="true"/>
+				<Property Name="InvoiceDate" Type="Edm.DateTime" Nullable="true"/>
+				<Property Name="InvoiceFlag" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="InvoiceNumber" Type="Edm.String" Nullable="false" MaxLength="255"/>
+				<Property Name="ItemFlag" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="ItemNumber" Type="Edm.Int32" Nullable="false"/>
+				<Property Name="ItemType" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="Pos" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="ProvAsesmnt" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="RefInvoiceDate" Type="Edm.DateTime" Nullable="true"/>
+				<Property Name="RefInvoiceNumber" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="ReverseCharge" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="SgstAmount" Type="Edm.Double" Nullable="true"/>
+				<Property Name="SgstRate" Type="Edm.Double" Nullable="true"/>
+				<Property Name="SupplierGSTIN" Type="Edm.String" Nullable="false" MaxLength="255"/>
+				<Property Name="TaxableAmount" Type="Edm.Double" Nullable="true"/>
+				<Property Name="TransactionID" Type="Edm.String" Nullable="false" MaxLength="255"/>
+			</EntityType>
+			<EntityType Name="CvGstr1aCDN">
+				<Key>
+					<PropertyRef Name="CdnNumber"/>
+					<PropertyRef Name="FinancialPeriod"/>
+					<PropertyRef Name="InvoiceNumber"/>
+					<PropertyRef Name="SupplierGSTIN"/>
+					<PropertyRef Name="TransactionID"/>
+				</Key>
+				<Property Name="CcAmendFlag" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="CcNoteType" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="CdnInvoiceDate" Type="Edm.DateTime" Nullable="true"/>
+				<Property Name="CdnNumber" Type="Edm.String" Nullable="false" MaxLength="255"/>
+				<Property Name="CgstAmount" Type="Edm.Double" Nullable="true"/>
+				<Property Name="CgstRate" Type="Edm.Double" Nullable="true"/>
+				<Property Name="CrtOrDbtReasonCode" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="Currency" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="CustomerGSTIN" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="CustomerName" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="FinancialPeriod" Type="Edm.String" Nullable="false" MaxLength="255"/>
+				<Property Name="IgstAmount" Type="Edm.Double" Nullable="true"/>
+				<Property Name="IgstRate" Type="Edm.Double" Nullable="true"/>
+				<Property Name="InvoiceAmount" Type="Edm.Double" Nullable="true"/>
+				<Property Name="InvoiceDate" Type="Edm.DateTime" Nullable="true"/>
+				<Property Name="InvoiceFlag" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="InvoiceNumber" Type="Edm.String" Nullable="false" MaxLength="255"/>
+				<Property Name="InvoiceType" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="RefInvoiceDate" Type="Edm.DateTime" Nullable="true"/>
+				<Property Name="RefInvoiceNumber" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="SgstAmount" Type="Edm.Double" Nullable="true"/>
+				<Property Name="SgstRate" Type="Edm.Double" Nullable="true"/>
+				<Property Name="SupplierGSTIN" Type="Edm.String" Nullable="false" MaxLength="255"/>
+				<Property Name="TaxableAmount" Type="Edm.Double" Nullable="true"/>
+				<Property Name="TransactionID" Type="Edm.String" Nullable="false" MaxLength="255"/>
+			</EntityType>
+			<EntityType Name="CvInvoiceStatus">
+				<Key>
+					<PropertyRef Name="CcInvCategory"/>
+					<PropertyRef Name="FinancialPeriod"/>
+					<PropertyRef Name="GstrType"/>
+					<PropertyRef Name="SupplierGSTIN"/>
+				</Key>
+				<Property Name="CcCount" Type="Edm.Int32" Nullable="true"/>
+				<Property Name="CcInvCategory" Type="Edm.String" Nullable="false" MaxLength="255"/>
+				<Property Name="FinancialPeriod" Type="Edm.String" Nullable="false" MaxLength="255"/>
+				<Property Name="GstrType" Type="Edm.String" Nullable="false" MaxLength="255"/>
+				<Property Name="SupplierGSTIN" Type="Edm.String" Nullable="false" MaxLength="255"/>
+			</EntityType>
+			<EntityType Name="CvInvoiceStatus1a">
+				<Key>
+					<PropertyRef Name="CcInvCategory"/>
+					<PropertyRef Name="FinancialPeriod"/>
+					<PropertyRef Name="GstrType"/>
+					<PropertyRef Name="SupplierGSTIN"/>
+				</Key>
+				<Property Name="CcCount" Type="Edm.Int32" Nullable="true"/>
+				<Property Name="CcInvCategory" Type="Edm.String" Nullable="false" MaxLength="255"/>
+				<Property Name="FinancialPeriod" Type="Edm.String" Nullable="false" MaxLength="255"/>
+				<Property Name="GstrType" Type="Edm.String" Nullable="false" MaxLength="255"/>
+				<Property Name="SupplierGSTIN" Type="Edm.String" Nullable="false" MaxLength="255"/>
+			</EntityType>
+			<EntityType Name="CvInvoiceTrack">
+				<Key>
+					<PropertyRef Name="SupplierGSTIN"/>
+				</Key>
+				<Property Name="CcEventDesc" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="CcEventType" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="CcEventTypeDesc" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="CreatedAt" Type="Edm.DateTime" Nullable="true"/>
+				<Property Name="CreatedBy" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="FinancialPeriod" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="GstrType" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="InvoiceNumber" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="SupplierGSTIN" Type="Edm.String" Nullable="false" MaxLength="255"/>
+				<Property Name="TransactionID" Type="Edm.String" Nullable="true" MaxLength="255"/>
+			</EntityType>
+			<EntityType Name="GSTR1ACdnItem">
+				<Key>
+					<PropertyRef Name="CdnNumber"/>
+					<PropertyRef Name="FinancialPeriod"/>
+					<PropertyRef Name="InvoiceNumber"/>
+					<PropertyRef Name="SupplierGSTIN"/>
+				</Key>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CdnNumber" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Note Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CgstAmount" Type="Edm.Double" Nullable="true" sap:label="CGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CgstRate" Type="Edm.Double" Nullable="true" sap:label="CGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CustomerGSTIN" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Customer GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CustomerName" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Customer Name"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="FinancialPeriod" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Financial Period"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="IgstAmount" Type="Edm.Double" Nullable="true" sap:label="IGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="IgstRate" Type="Edm.Double" Nullable="true" sap:label="IGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceDate" Type="Edm.DateTime" Nullable="true" sap:label="Invoice Date"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceNumber" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Invoice Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceType" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Invoice Type"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SgstAmount" Type="Edm.Double" Nullable="true" sap:label="SGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SgstRate" Type="Edm.Double" Nullable="true" sap:label="SGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SupplierGSTIN" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Supplier GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TaxableAmount" Type="Edm.Double" Nullable="true" sap:label="Taxable Amount"/>
+				<NavigationProperty Name="GSTR1AInvoiceHeaderDetails" Relationship="default.GSTR1ACdnItem_GSTR1AInvoiceHeader_Many_ZeroToOne0"
+					FromRole="GSTR1ACdnItem" ToRole="GSTR1AInvoiceHeader"/>
+			</EntityType>
+			<EntityType Name="GSTR1AInvoiceHeader">
+				<Key>
+					<PropertyRef Name="FinancialPeriod"/>
+					<PropertyRef Name="InvoiceNumber"/>
+					<PropertyRef Name="SupplierGSTIN"/>
+				</Key>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CheckSum" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Checksum"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CreatedAt" Type="Edm.DateTime" Nullable="true" sap:label="Created At"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CreatedBy" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Created By"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CrtOrDbtReasonCode" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Credit/Debit Reason Code"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="Currency" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Currency"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CustomerGSTIN" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Customer GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CustomerName" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Customer Name"/>
+				<Property Name="ErrorFlag" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="FinancialPeriod" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Financial Period"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InProcessFlag" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="In-Process Flag"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceAmount" Type="Edm.Double" Nullable="true" sap:label="Invoice Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceCommStatus" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Invoice Communication Status"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceDate" Type="Edm.DateTime" Nullable="true" sap:label="Invoice Date"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceFlag" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Invoice Flag"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceNumber" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Invoice Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceType" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Invoice Type"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="OnHoldFlag" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="On-Hold Flag"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="Pos" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Place of Supply"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ProvAsesmnt" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Provisional Assessment"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ReceiverState" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Recipient State"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="RefInvoiceDate" Type="Edm.DateTime" Nullable="true"
+					sap:label="Reference Invoice Date"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="RefInvoiceNumber" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Reference Invoice Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ReverseCharge" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Reverse Charge"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SupplierGSTIN" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Supplier GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SupplierState" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Supplier State"/>
+				<NavigationProperty Name="GSTRInvoiceTransactionDetails" Relationship="default.GSTR1AInvoiceHeader_GSTRInvoiceTransaction_One_Many0"
+					FromRole="GSTR1AInvoiceHeader" ToRole="GSTRInvoiceTransaction"/>
+				<NavigationProperty Name="GSTR1ACdnItemDetails" Relationship="default.GSTR1ACdnItem_GSTR1AInvoiceHeader_Many_ZeroToOne0"
+					FromRole="GSTR1AInvoiceHeader" ToRole="GSTR1ACdnItem"/>
+				<NavigationProperty Name="GSTR1AInvoiceItemDetails" Relationship="default.GSTR1AInvoiceHeader_GSTR1AInvoiceItem_One_Many0"
+					FromRole="GSTR1AInvoiceHeader" ToRole="GSTR1AInvoiceItem"/>
+			</EntityType>
+			<EntityType Name="GSTR1AInvoiceItem">
+				<Key>
+					<PropertyRef Name="CodeHSNorSAC"/>
+					<PropertyRef Name="FinancialPeriod"/>
+					<PropertyRef Name="InvoiceNumber"/>
+					<PropertyRef Name="ItemNumber"/>
+					<PropertyRef Name="SupplierGSTIN"/>
+				</Key>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CgstAmount" Type="Edm.Double" Nullable="true" sap:label="CGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CgstRate" Type="Edm.Double" Nullable="true" sap:label="CGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CodeHSNorSAC" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="HSN/SAC Code"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="FinancialPeriod" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Financial Period"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="IgstAmount" Type="Edm.Double" Nullable="true" sap:label="IGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="IgstRate" Type="Edm.Double" Nullable="true" sap:label="IGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceNumber" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Invoice Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ItemFlag" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Item Flag"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ItemNumber" Type="Edm.Int32" Nullable="false" sap:label="Item Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ItemType" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Item Type"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SgstAmount" Type="Edm.Double" Nullable="true" sap:label="SGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SgstRate" Type="Edm.Double" Nullable="true" sap:label="SGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SupplierGSTIN" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Supplier GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TaxableAmount" Type="Edm.Double" Nullable="true" sap:label="Taxable Amount"/>
+				<NavigationProperty Name="GSTR1AInvoiceHeaderDetails" Relationship="default.GSTR1AInvoiceHeader_GSTR1AInvoiceItem_One_Many0"
+					FromRole="GSTR1AInvoiceItem" ToRole="GSTR1AInvoiceHeader"/>
+			</EntityType>
+			<EntityType Name="GSTR1ASectionSumm">
+				<Key>
+					<PropertyRef Name="CcSectionType"/>
+					<PropertyRef Name="FinancialPeriod"/>
+					<PropertyRef Name="SupplierGSTIN"/>
+					<PropertyRef Name="TransactionID"/>
+				</Key>
+				<Property Name="CcSectionNum" Type="Edm.Int32" Nullable="true"/>
+				<Property Name="CcSectionType" Type="Edm.String" Nullable="false" MaxLength="255"/>
+				<Property Name="CgstAmount" Type="Edm.Double" Nullable="true"/>
+				<Property Name="Currency" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="FinancialPeriod" Type="Edm.String" Nullable="false" MaxLength="255"/>
+				<Property Name="IgstAmount" Type="Edm.Double" Nullable="true"/>
+				<Property Name="SgstAmount" Type="Edm.Double" Nullable="true"/>
+				<Property Name="SupplierGSTIN" Type="Edm.String" Nullable="false" MaxLength="255"/>
+				<Property Name="TaxableAmount" Type="Edm.Double" Nullable="true"/>
+				<Property Name="TransactionID" Type="Edm.String" Nullable="false" MaxLength="255"/>
+			</EntityType>
+			<EntityType Name="GSTR1B2csSummary">
+				<Key>
+					<PropertyRef Name="CodeHSNorSAC"/>
+					<PropertyRef Name="DestinationState"/>
+					<PropertyRef Name="FinancialPeriod"/>
+					<PropertyRef Name="GstrType"/>
+					<PropertyRef Name="ItemType"/>
+					<PropertyRef Name="SupplierGSTIN"/>
+					<PropertyRef Name="TransactionID"/>
+				</Key>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CgstAmount" Type="Edm.Double" Nullable="true" sap:label="CGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CgstRate" Type="Edm.Double" Nullable="true" sap:label="CGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CodeHSNorSAC" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="HSN/SAC Code"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="DestinationState" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Destination State Code"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="FinancialPeriod" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Financial Period"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="GstrType" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="GSTR Type"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="IgstAmount" Type="Edm.Double" Nullable="true" sap:label="IGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="IgstRate" Type="Edm.Double" Nullable="true" sap:label="IGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ItemType" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Item Type"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SgstAmount" Type="Edm.Double" Nullable="true" sap:label="SGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SgstRate" Type="Edm.Double" Nullable="true" sap:label="SGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SupplierGSTIN" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Supplier GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TaxableAmount" Type="Edm.Double" Nullable="true" sap:label="Taxable Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TransactionID" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Transaction ID"/>
+				<NavigationProperty Name="GSTRTransactionDetails" Relationship="default.GSTR1B2csSummary_GSTRTransaction_Many_ZeroToOne0"
+					FromRole="GSTR1B2csSummary" ToRole="GSTRTransaction"/>
+			</EntityType>
+			<EntityType Name="GSTR1CdnItem">
+				<Key>
+					<PropertyRef Name="CdnNumber"/>
+					<PropertyRef Name="FinancialPeriod"/>
+					<PropertyRef Name="InvoiceNumber"/>
+					<PropertyRef Name="SupplierGSTIN"/>
+				</Key>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CdnNumber" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Note Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CgstAmount" Type="Edm.Double" Nullable="true" sap:label="CGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CgstRate" Type="Edm.Double" Nullable="true" sap:label="CGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CustomerGSTIN" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Customer GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CustomerName" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Customer Name"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="FinancialPeriod" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Financial Period"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="IgstAmount" Type="Edm.Double" Nullable="true" sap:label="IGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="IgstRate" Type="Edm.Double" Nullable="true" sap:label="IGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceDate" Type="Edm.DateTime" Nullable="true" sap:label="Invoice Date"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceNumber" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Invoice Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceType" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Invoice Type"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SgstAmount" Type="Edm.Double" Nullable="true" sap:label="SGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SgstRate" Type="Edm.Double" Nullable="true" sap:label="SGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SupplierGSTIN" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Supplier GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TaxableAmount" Type="Edm.Double" Nullable="true" sap:label="Taxable Amount"/>
+				<NavigationProperty Name="GSTR1InvoiceHeaderDetails" Relationship="default.GSTR1CdnItem_GSTR1InvoiceHeader_Many_ZeroToOne0"
+					FromRole="GSTR1CdnItem" ToRole="GSTR1InvoiceHeader"/>
+			</EntityType>
+			<EntityType Name="GSTR1InvoiceHeader">
+				<Key>
+					<PropertyRef Name="FinancialPeriod"/>
+					<PropertyRef Name="InvoiceNumber"/>
+					<PropertyRef Name="SupplierGSTIN"/>
+				</Key>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CancelInvoiceFlag" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Invoice Cancellation Flag"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CheckSum" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Checksum"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CreatedAt" Type="Edm.DateTime" Nullable="true" sap:label="Created At"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CreatedBy" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Created By"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CrtOrDbtReasonCode" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Credit/Debit Reason Code"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="Currency" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Currency"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CustomerGSTIN" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Customer GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CustomerName" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Customer Name"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="EcomCustomerGSTIN" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="e-commerce portal GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="EcomMerchantID" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="e-commerce portal Merchant ID "/>
+				<Property Name="ErrorFlag" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="FilingSource" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Filing Source"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="FinancialPeriod" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Financial Period"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InProcessFlag" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="In-Process Flag"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceAmount" Type="Edm.Double" Nullable="true" sap:label="Invoice Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceCommStatus" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Invoice Communication Status"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceDate" Type="Edm.DateTime" Nullable="true" sap:label="Invoice Date"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceFlag" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Invoice Flag"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceNumber" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Invoice Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceType" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Invoice Type"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="NilInvoiceType" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Nil Invoice Type"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="OnHoldFlag" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="On-Hold Flag"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="Pos" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Place of Supply"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ProvAsesmnt" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Provisional Assessment"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ReceiverState" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Recipient State"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="RefInvoiceDate" Type="Edm.DateTime" Nullable="true"
+					sap:label="Reference Invoice Date"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="RefInvoiceDate2" Type="Edm.DateTime" Nullable="true"
+					sap:label="Reference Invoice Date 2"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="RefInvoiceNumber" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Reference Invoice Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="RefInvoiceNumber2" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Reference Invoice Number 2"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ReverseCharge" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Reverse Charge"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SupplierGSTIN" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Supplier GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SupplierState" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Supplier State"/>
+				<NavigationProperty Name="GSTRInvoiceTransactionDetails" Relationship="default.GSTR1InvoiceHeader_GSTRInvoiceTransaction_One_Many0"
+					FromRole="GSTR1InvoiceHeader" ToRole="GSTRInvoiceTransaction"/>
+				<NavigationProperty Name="GSTR1CdnItemDetails" Relationship="default.GSTR1CdnItem_GSTR1InvoiceHeader_Many_ZeroToOne0"
+					FromRole="GSTR1InvoiceHeader" ToRole="GSTR1CdnItem"/>
+				<NavigationProperty Name="GSTR1InvoiceItemDetails" Relationship="default.GSTR1InvoiceHeader_GSTR1InvoiceItem_One_Many0"
+					FromRole="GSTR1InvoiceHeader" ToRole="GSTR1InvoiceItem"/>
+				<NavigationProperty Name="SourceTransactionInvoiceDetails" Relationship="default.GSTR1InvoiceHeader_SourceTransactionInvoice_One_Many0"
+					FromRole="GSTR1InvoiceHeader" ToRole="SourceTransactionInvoice"/>
+			</EntityType>
+			<EntityType Name="GSTR1InvoiceItem">
+				<Key>
+					<PropertyRef Name="CodeHSNorSAC"/>
+					<PropertyRef Name="FinancialPeriod"/>
+					<PropertyRef Name="InvoiceNumber"/>
+					<PropertyRef Name="ItemNumber"/>
+					<PropertyRef Name="SupplierGSTIN"/>
+				</Key>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CgstAmount" Type="Edm.Double" Nullable="true" sap:label="CGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CgstRate" Type="Edm.Double" Nullable="true" sap:label="CGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CodeHSNorSAC" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="HSN/SAC Code"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="FinancialPeriod" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Financial Period"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="IgstAmount" Type="Edm.Double" Nullable="true" sap:label="IGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="IgstRate" Type="Edm.Double" Nullable="true" sap:label="IGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceNumber" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Invoice Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ItemFlag" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Item Flag"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ItemNumber" Type="Edm.Int32" Nullable="false" sap:label="Item Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ItemType" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Item Type"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SgstAmount" Type="Edm.Double" Nullable="true" sap:label="SGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SgstRate" Type="Edm.Double" Nullable="true" sap:label="SGST Rate"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SupplierGSTIN" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Supplier GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TaxableAmount" Type="Edm.Double" Nullable="true" sap:label="Taxable Amount"/>
+				<NavigationProperty Name="GSTR1InvoiceHeaderDetails" Relationship="default.GSTR1InvoiceHeader_GSTR1InvoiceItem_One_Many0"
+					FromRole="GSTR1InvoiceItem" ToRole="GSTR1InvoiceHeader"/>
+			</EntityType>
+			<EntityType Name="GSTR1InvoiceNumberRange">
+				<Key>
+					<PropertyRef Name="FinancialPeriod"/>
+					<PropertyRef Name="GstrType"/>
+					<PropertyRef Name="NumberRangeSeries"/>
+					<PropertyRef Name="SupplierGSTIN"/>
+				</Key>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="FinancialPeriod" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Financial Period"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="FromNum" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="From Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="GstrType" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Gstr Type"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="NetIssuedInvoice" Type="Edm.Int32" Nullable="true"
+					sap:label="Net number of invoices issued"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="NoOfCancelInvoice" Type="Edm.Int32" Nullable="true"
+					sap:label="Number of cancelled invoices"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="NumberRangeSeries" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Series number of invoices"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SupplierGSTIN" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Supplier GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ToNum" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="To Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TotalInvoice" Type="Edm.Int32" Nullable="true"
+					sap:label="Total number of invoices"/>
+				<NavigationProperty Name="GSTRMasterDetails" Relationship="default.GSTR1InvoiceNumberRange_GSTRMaster_Many_ZeroToOne0"
+					FromRole="GSTR1InvoiceNumberRange" ToRole="GSTRMaster"/>
+			</EntityType>
+			<EntityType Name="GSTR1InvoiceRecon">
+				<Key>
+					<PropertyRef Name="CcErrorSource"/>
+					<PropertyRef Name="FinancialPeriod"/>
+					<PropertyRef Name="InvoiceNumber"/>
+					<PropertyRef Name="SupplierGSTIN"/>
+					<PropertyRef Name="TransactionID"/>
+				</Key>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CcErrorMatch" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Data Match"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CcErrorOnHold" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="On-Hold"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CcErrorSource" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Data Source"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CcErrorType" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Reconciliation Error Type"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CgstAmount" Type="Edm.Double" Nullable="true" sap:label="CGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="Currency" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Currency"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CustomerGSTIN" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Customer GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CustomerName" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Customer Name"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="FinancialPeriod" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Financial Period"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="IgstAmount" Type="Edm.Double" Nullable="true" sap:label="IGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceNumber" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Invoice Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceType" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Invoice Type"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SgstAmount" Type="Edm.Double" Nullable="true" sap:label="SGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SupplierGSTIN" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Supplier GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TaxableAmount" Type="Edm.Double" Nullable="true" sap:label="Taxable Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TransactionID" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Transaction ID"/>
+			</EntityType>
+			<EntityType Name="GSTR1SectionSumm">
+				<Key>
+					<PropertyRef Name="CcSectionType"/>
+					<PropertyRef Name="FinancialPeriod"/>
+					<PropertyRef Name="SupplierGSTIN"/>
+					<PropertyRef Name="TransactionID"/>
+				</Key>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CcSectionNum" Type="Edm.Int32" Nullable="true"
+					sap:label="Section Serial Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CcSectionType" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Section Type"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CgstAmount" Type="Edm.Double" Nullable="true" sap:label="CGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="Currency" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Currency"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="FinancialPeriod" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Financial Period"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="IgstAmount" Type="Edm.Double" Nullable="true" sap:label="IGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SgstAmount" Type="Edm.Double" Nullable="true" sap:label="SGST Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SupplierGSTIN" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Supplier GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TaxableAmount" Type="Edm.Double" Nullable="true" sap:label="Taxable Amount"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TransactionID" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Transaction ID"/>
+			</EntityType>
+			<EntityType Name="GSTR1aInvoiceRecon">
+				<Key>
+					<PropertyRef Name="CcErrorSource"/>
+					<PropertyRef Name="FinancialPeriod"/>
+					<PropertyRef Name="InvoiceNumber"/>
+					<PropertyRef Name="SupplierGSTIN"/>
+				</Key>
+				<Property Name="CcErrorMatch" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="CcErrorOnHold" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="CcErrorSource" Type="Edm.String" Nullable="false" MaxLength="255"/>
+				<Property Name="CcErrorType" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="CgstAmount" Type="Edm.Double" Nullable="true"/>
+				<Property Name="Currency" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="CustomerGSTIN" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="CustomerName" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="FinancialPeriod" Type="Edm.String" Nullable="false" MaxLength="255"/>
+				<Property Name="IgstAmount" Type="Edm.Double" Nullable="true"/>
+				<Property Name="InvoiceNumber" Type="Edm.String" Nullable="false" MaxLength="255"/>
+				<Property Name="InvoiceType" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="SgstAmount" Type="Edm.Double" Nullable="true"/>
+				<Property Name="SupplierGSTIN" Type="Edm.String" Nullable="false" MaxLength="255"/>
+				<Property Name="TaxableAmount" Type="Edm.Double" Nullable="true"/>
+			</EntityType>
+			<EntityType Name="GSTRInvoiceTransaction">
+				<Key>
+					<PropertyRef Name="FinancialPeriod"/>
+					<PropertyRef Name="InvFinancialPeriod"/>
+					<PropertyRef Name="InvoiceNumber"/>
+					<PropertyRef Name="SupplierGSTIN"/>
+					<PropertyRef Name="TransactionID"/>
+				</Key>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="FinancialPeriod" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Financial Period"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="GstrType" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="GSTR Type"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvFinancialPeriod" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Invoice Financial Period"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceNumber" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Invoice Number"/>
+				<Property Name="InvoiceTransErrorDesc" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="InvoiceTransErrorFlag" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="InvoiceTransFlag" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceTransStatus" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Invoice Status"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SupplierGSTIN" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Supplier GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TransactionID" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Transaction ID"/>
+				<NavigationProperty Name="GSTR1InvoiceHeaderDetails" Relationship="default.GSTR1InvoiceHeader_GSTRInvoiceTransaction_One_Many0"
+					FromRole="GSTRInvoiceTransaction" ToRole="GSTR1InvoiceHeader"/>
+				<NavigationProperty Name="GSTR1AInvoiceHeaderDetails" Relationship="default.GSTR1AInvoiceHeader_GSTRInvoiceTransaction_One_Many0"
+					FromRole="GSTRInvoiceTransaction" ToRole="GSTR1AInvoiceHeader"/>
+				<NavigationProperty Name="GSTRTransactionDetails" Relationship="default.GSTRInvoiceTransaction_GSTRTransaction_Many_ZeroToOne0"
+					FromRole="GSTRInvoiceTransaction" ToRole="GSTRTransaction"/>
+			</EntityType>
+			<EntityType Name="GSTRJobData">
+				<Key>
+					<PropertyRef Name="JobId"/>
+				</Key>
+				<Property Name="Duration" Type="Edm.Int32" Nullable="true"/>
+				<Property Name="FinancialPeriod" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="GstrType" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="JobId" Type="Edm.String" Nullable="false" MaxLength="255"/>
+				<Property Name="JobStatus" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="JobType" Type="Edm.String" Nullable="true" MaxLength="255"/>
+				<Property Name="SupplierGSTIN" Type="Edm.String" Nullable="true" MaxLength="255"/>
+			</EntityType>
+			<EntityType Name="GSTRMaster">
+				<Key>
+					<PropertyRef Name="FinancialPeriod"/>
+					<PropertyRef Name="GstrType"/>
+					<PropertyRef Name="SupplierGSTIN"/>
+				</Key>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="FileACKID" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Filing Acknowledgement ID"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="FileCreatedAt" Type="Edm.DateTime" Nullable="true"
+					sap:label="Filing Created At"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="FileCreatedBy" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Filing Created By"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="FileRequestPayload" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Filing Request Payload"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="FileResponsePayload" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Filing Response Payload"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="FinancialPeriod" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Financial Period"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="GstrType" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="GSTR Type"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="Status" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Status"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SupplierGSTIN" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Supplier GSTIN"/>
+				<NavigationProperty Name="GSTRMasterMainDetails" Relationship="default.GSTRMaster_GSTRMasterMain_Many_ZeroToOne0" FromRole="GSTRMaster"
+					ToRole="GSTRMasterMain"/>
+				<NavigationProperty Name="GSTRTransactionDetails" Relationship="default.GSTRMaster_GSTRTransaction_One_Many0" FromRole="GSTRMaster"
+					ToRole="GSTRTransaction"/>
+				<NavigationProperty Name="GSTR1InvoiceNumberRangeDetails" Relationship="default.GSTR1InvoiceNumberRange_GSTRMaster_Many_ZeroToOne0"
+					FromRole="GSTRMaster" ToRole="GSTR1InvoiceNumberRange"/>
+			</EntityType>
+			<EntityType Name="GSTRMasterMain">
+				<Key>
+					<PropertyRef Name="SupplierGSTIN"/>
+				</Key>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SourceID" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Source ID"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SupplierGSTIN" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Supplier GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SupplierName" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Supplier Name"/>
+				<NavigationProperty Name="GSTRMasterDetails" Relationship="default.GSTRMaster_GSTRMasterMain_Many_ZeroToOne0" FromRole="GSTRMasterMain"
+					ToRole="GSTRMaster"/>
+			</EntityType>
+			<EntityType Name="GSTRTransaction">
+				<Key>
+					<PropertyRef Name="FinancialPeriod"/>
+					<PropertyRef Name="GstrType"/>
+					<PropertyRef Name="SupplierGSTIN"/>
+					<PropertyRef Name="TransactionID"/>
+				</Key>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CreatedAt" Type="Edm.DateTime" Nullable="true" sap:label="Created At"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CreatedBy" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Created By"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ExtCommonID" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="External Communication ID"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="FinancialPeriod" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Financial Period"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="GstnAckId" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="GSTN Acknowledgement ID"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="GstrType" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="GSTR Type"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ModifiedAt" Type="Edm.DateTime" Nullable="true" sap:label="Modified At"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ModifiedBy" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Modified By"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="RequestPayload" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Request Payload"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ResponsePayload" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Response Payload"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="Status" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Status"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SupplierGSTIN" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Supplier GSTIN"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TransactionID" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Transaction ID"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="TransactionType" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Transaction Type"/>
+				<NavigationProperty Name="GSTRInvoiceTransactionDetails" Relationship="default.GSTRInvoiceTransaction_GSTRTransaction_Many_ZeroToOne0"
+					FromRole="GSTRTransaction" ToRole="GSTRInvoiceTransaction"/>
+				<NavigationProperty Name="GSTR1B2csSummaryDetails" Relationship="default.GSTR1B2csSummary_GSTRTransaction_Many_ZeroToOne0"
+					FromRole="GSTRTransaction" ToRole="GSTR1B2csSummary"/>
+				<NavigationProperty Name="GSTRMasterDetails" Relationship="default.GSTRMaster_GSTRTransaction_One_Many0" FromRole="GSTRTransaction"
+					ToRole="GSTRMaster"/>
+			</EntityType>
+			<EntityType Name="SourceTransaction">
+				<Key>
+					<PropertyRef Name="SourceAckID"/>
+					<PropertyRef Name="SourceTransactionID"/>
+				</Key>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CreatedAt" Type="Edm.DateTime" Nullable="true" sap:label="Created At"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="CreatedBy" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Created By"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="RequestPayload" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Request Payload"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="ResponsePayload" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Response Payload"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SourceAckID" Type="Edm.String" Nullable="false" MaxLength="36"
+					sap:label="Source Acknowledgement ID"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SourceTransactionID" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Source Transaction ID"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="Status" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Status"/>
+				<NavigationProperty Name="SourceTransactionInvoiceDetails" Relationship="default.SourceTransaction_SourceTransactionInvoice_One_Many0"
+					FromRole="SourceTransaction" ToRole="SourceTransactionInvoice"/>
+			</EntityType>
+			<EntityType Name="SourceTransactionInvoice">
+				<Key>
+					<PropertyRef Name="FinancialPeriod"/>
+					<PropertyRef Name="InvoiceNumber"/>
+					<PropertyRef Name="SourceAckID"/>
+					<PropertyRef Name="SourceTransactionID"/>
+					<PropertyRef Name="SupplierGSTIN"/>
+				</Key>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="FinancialPeriod" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Financial Period"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceNumber" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Invoice Number"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="InvoiceReplicationStatus" Type="Edm.String" Nullable="true" MaxLength="255"
+					sap:label="Invoice Replication Status"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SourceAckID" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Source Acknowledgement ID"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SourceTransactionID" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Source Transaction ID"/>
+				<Property xmlns:sap="http://www.sap.com/Protocols/SAPData" Name="SupplierGSTIN" Type="Edm.String" Nullable="false" MaxLength="255"
+					sap:label="Supplier GSTIN"/>
+				<NavigationProperty Name="GSTR1InvoiceHeaderDetails" Relationship="default.GSTR1InvoiceHeader_SourceTransactionInvoice_One_Many0"
+					FromRole="SourceTransactionInvoice" ToRole="GSTR1InvoiceHeader"/>
+				<NavigationProperty Name="SourceTransactionDetails" Relationship="default.SourceTransaction_SourceTransactionInvoice_One_Many0"
+					FromRole="SourceTransactionInvoice" ToRole="SourceTransaction"/>
+			</EntityType>
+			<ComplexType Name="StatusResponse">
+				<Property Name="code" Type="Edm.String"/>
+				<Property Name="description" Type="Edm.String"/>
+				<Property Name="status" Type="Edm.String"/>
+				<Property Name="id" Type="Edm.String"/>
+			</ComplexType>
+			<Association Name="GSTR1ACdnItem_GSTR1AInvoiceHeader_Many_ZeroToOne0">
+				<End Type="default.GSTR1ACdnItem" Multiplicity="*" Role="GSTR1ACdnItem"/>
+				<End Type="default.GSTR1AInvoiceHeader" Multiplicity="0..1" Role="GSTR1AInvoiceHeader"/>
+				<ReferentialConstraint>
+					<Principal Role="GSTR1AInvoiceHeader">
+						<PropertyRef Name="SupplierGSTIN"/>
+						<PropertyRef Name="FinancialPeriod"/>
+						<PropertyRef Name="InvoiceNumber"/>
+					</Principal>
+					<Dependent Role="GSTR1ACdnItem">
+						<PropertyRef Name="SupplierGSTIN"/>
+						<PropertyRef Name="FinancialPeriod"/>
+						<PropertyRef Name="CdnNumber"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="GSTR1AInvoiceHeader_GSTR1AInvoiceItem_One_Many0">
+				<End Type="default.GSTR1AInvoiceHeader" Multiplicity="0..1" Role="GSTR1AInvoiceHeader"/>
+				<End Type="default.GSTR1AInvoiceItem" Multiplicity="*" Role="GSTR1AInvoiceItem"/>
+				<ReferentialConstraint>
+					<Principal Role="GSTR1AInvoiceHeader">
+						<PropertyRef Name="SupplierGSTIN"/>
+						<PropertyRef Name="FinancialPeriod"/>
+						<PropertyRef Name="InvoiceNumber"/>
+					</Principal>
+					<Dependent Role="GSTR1AInvoiceItem">
+						<PropertyRef Name="SupplierGSTIN"/>
+						<PropertyRef Name="FinancialPeriod"/>
+						<PropertyRef Name="InvoiceNumber"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="GSTR1B2csSummary_GSTRTransaction_Many_ZeroToOne0">
+				<End Type="default.GSTR1B2csSummary" Multiplicity="*" Role="GSTR1B2csSummary"/>
+				<End Type="default.GSTRTransaction" Multiplicity="0..1" Role="GSTRTransaction"/>
+				<ReferentialConstraint>
+					<Principal Role="GSTRTransaction">
+						<PropertyRef Name="SupplierGSTIN"/>
+						<PropertyRef Name="FinancialPeriod"/>
+						<PropertyRef Name="GstrType"/>
+						<PropertyRef Name="TransactionID"/>
+					</Principal>
+					<Dependent Role="GSTR1B2csSummary">
+						<PropertyRef Name="SupplierGSTIN"/>
+						<PropertyRef Name="FinancialPeriod"/>
+						<PropertyRef Name="GstrType"/>
+						<PropertyRef Name="TransactionID"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="GSTR1CdnItem_GSTR1InvoiceHeader_Many_ZeroToOne0">
+				<End Type="default.GSTR1CdnItem" Multiplicity="*" Role="GSTR1CdnItem"/>
+				<End Type="default.GSTR1InvoiceHeader" Multiplicity="0..1" Role="GSTR1InvoiceHeader"/>
+				<ReferentialConstraint>
+					<Principal Role="GSTR1InvoiceHeader">
+						<PropertyRef Name="SupplierGSTIN"/>
+						<PropertyRef Name="FinancialPeriod"/>
+						<PropertyRef Name="InvoiceNumber"/>
+					</Principal>
+					<Dependent Role="GSTR1CdnItem">
+						<PropertyRef Name="SupplierGSTIN"/>
+						<PropertyRef Name="FinancialPeriod"/>
+						<PropertyRef Name="CdnNumber"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="GSTR1InvoiceHeader_GSTR1InvoiceItem_One_Many0">
+				<End Type="default.GSTR1InvoiceHeader" Multiplicity="0..1" Role="GSTR1InvoiceHeader"/>
+				<End Type="default.GSTR1InvoiceItem" Multiplicity="*" Role="GSTR1InvoiceItem"/>
+				<ReferentialConstraint>
+					<Principal Role="GSTR1InvoiceHeader">
+						<PropertyRef Name="SupplierGSTIN"/>
+						<PropertyRef Name="FinancialPeriod"/>
+						<PropertyRef Name="InvoiceNumber"/>
+					</Principal>
+					<Dependent Role="GSTR1InvoiceItem">
+						<PropertyRef Name="SupplierGSTIN"/>
+						<PropertyRef Name="FinancialPeriod"/>
+						<PropertyRef Name="InvoiceNumber"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="GSTR1InvoiceNumberRange_GSTRMaster_Many_ZeroToOne0">
+				<End Type="default.GSTR1InvoiceNumberRange" Multiplicity="*" Role="GSTR1InvoiceNumberRange"/>
+				<End Type="default.GSTRMaster" Multiplicity="0..1" Role="GSTRMaster"/>
+				<ReferentialConstraint>
+					<Principal Role="GSTRMaster">
+						<PropertyRef Name="SupplierGSTIN"/>
+						<PropertyRef Name="FinancialPeriod"/>
+						<PropertyRef Name="GstrType"/>
+					</Principal>
+					<Dependent Role="GSTR1InvoiceNumberRange">
+						<PropertyRef Name="SupplierGSTIN"/>
+						<PropertyRef Name="FinancialPeriod"/>
+						<PropertyRef Name="GstrType"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="GSTR1InvoiceHeader_GSTRInvoiceTransaction_One_Many0">
+				<End Type="default.GSTR1InvoiceHeader" Multiplicity="0..1" Role="GSTR1InvoiceHeader"/>
+				<End Type="default.GSTRInvoiceTransaction" Multiplicity="*" Role="GSTRInvoiceTransaction"/>
+				<ReferentialConstraint>
+					<Principal Role="GSTR1InvoiceHeader">
+						<PropertyRef Name="SupplierGSTIN"/>
+						<PropertyRef Name="FinancialPeriod"/>
+						<PropertyRef Name="InvoiceNumber"/>
+					</Principal>
+					<Dependent Role="GSTRInvoiceTransaction">
+						<PropertyRef Name="SupplierGSTIN"/>
+						<PropertyRef Name="InvFinancialPeriod"/>
+						<PropertyRef Name="InvoiceNumber"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="GSTR1AInvoiceHeader_GSTRInvoiceTransaction_One_Many0">
+				<End Type="default.GSTR1AInvoiceHeader" Multiplicity="0..1" Role="GSTR1AInvoiceHeader"/>
+				<End Type="default.GSTRInvoiceTransaction" Multiplicity="*" Role="GSTRInvoiceTransaction"/>
+				<ReferentialConstraint>
+					<Principal Role="GSTR1AInvoiceHeader">
+						<PropertyRef Name="SupplierGSTIN"/>
+						<PropertyRef Name="FinancialPeriod"/>
+						<PropertyRef Name="InvoiceNumber"/>
+					</Principal>
+					<Dependent Role="GSTRInvoiceTransaction">
+						<PropertyRef Name="SupplierGSTIN"/>
+						<PropertyRef Name="InvFinancialPeriod"/>
+						<PropertyRef Name="InvoiceNumber"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="GSTRInvoiceTransaction_GSTRTransaction_Many_ZeroToOne0">
+				<End Type="default.GSTRInvoiceTransaction" Multiplicity="*" Role="GSTRInvoiceTransaction"/>
+				<End Type="default.GSTRTransaction" Multiplicity="0..1" Role="GSTRTransaction"/>
+				<ReferentialConstraint>
+					<Principal Role="GSTRTransaction">
+						<PropertyRef Name="SupplierGSTIN"/>
+						<PropertyRef Name="FinancialPeriod"/>
+						<PropertyRef Name="GstrType"/>
+						<PropertyRef Name="TransactionID"/>
+					</Principal>
+					<Dependent Role="GSTRInvoiceTransaction">
+						<PropertyRef Name="SupplierGSTIN"/>
+						<PropertyRef Name="FinancialPeriod"/>
+						<PropertyRef Name="GstrType"/>
+						<PropertyRef Name="TransactionID"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="GSTRMaster_GSTRMasterMain_Many_ZeroToOne0">
+				<End Type="default.GSTRMaster" Multiplicity="*" Role="GSTRMaster"/>
+				<End Type="default.GSTRMasterMain" Multiplicity="0..1" Role="GSTRMasterMain"/>
+				<ReferentialConstraint>
+					<Principal Role="GSTRMasterMain">
+						<PropertyRef Name="SupplierGSTIN"/>
+					</Principal>
+					<Dependent Role="GSTRMaster">
+						<PropertyRef Name="SupplierGSTIN"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="GSTRMaster_GSTRTransaction_One_Many0">
+				<End Type="default.GSTRMaster" Multiplicity="0..1" Role="GSTRMaster"/>
+				<End Type="default.GSTRTransaction" Multiplicity="*" Role="GSTRTransaction"/>
+				<ReferentialConstraint>
+					<Principal Role="GSTRMaster">
+						<PropertyRef Name="SupplierGSTIN"/>
+						<PropertyRef Name="FinancialPeriod"/>
+						<PropertyRef Name="GstrType"/>
+					</Principal>
+					<Dependent Role="GSTRTransaction">
+						<PropertyRef Name="SupplierGSTIN"/>
+						<PropertyRef Name="FinancialPeriod"/>
+						<PropertyRef Name="GstrType"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="GSTR1InvoiceHeader_SourceTransactionInvoice_One_Many0">
+				<End Type="default.GSTR1InvoiceHeader" Multiplicity="0..1" Role="GSTR1InvoiceHeader"/>
+				<End Type="default.SourceTransactionInvoice" Multiplicity="*" Role="SourceTransactionInvoice"/>
+				<ReferentialConstraint>
+					<Principal Role="GSTR1InvoiceHeader">
+						<PropertyRef Name="SupplierGSTIN"/>
+						<PropertyRef Name="FinancialPeriod"/>
+						<PropertyRef Name="InvoiceNumber"/>
+					</Principal>
+					<Dependent Role="SourceTransactionInvoice">
+						<PropertyRef Name="SupplierGSTIN"/>
+						<PropertyRef Name="FinancialPeriod"/>
+						<PropertyRef Name="InvoiceNumber"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="SourceTransaction_SourceTransactionInvoice_One_Many0">
+				<End Type="default.SourceTransaction" Multiplicity="0..1" Role="SourceTransaction"/>
+				<End Type="default.SourceTransactionInvoice" Multiplicity="*" Role="SourceTransactionInvoice"/>
+				<ReferentialConstraint>
+					<Principal Role="SourceTransaction">
+						<PropertyRef Name="SourceTransactionID"/>
+						<PropertyRef Name="SourceAckID"/>
+					</Principal>
+					<Dependent Role="SourceTransactionInvoice">
+						<PropertyRef Name="SourceTransactionID"/>
+						<PropertyRef Name="SourceAckID"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<EntityContainer Name="defaultContainer" m:IsDefaultEntityContainer="true">
+				<EntitySet Name="CvGstr1ATs" EntityType="default.CvGstr1AT"/>
+				<EntitySet Name="CvGstr1B2Bs" EntityType="default.CvGstr1B2B"/>
+				<EntitySet Name="CvGstr1B2CLs" EntityType="default.CvGstr1B2CL"/>
+				<EntitySet Name="CvGstr1B2CSs" EntityType="default.CvGstr1B2CS"/>
+				<EntitySet Name="CvGstr1B2CSSummarys" EntityType="default.CvGstr1B2CSSummary"/>
+				<EntitySet Name="CvGstr1CDNs" EntityType="default.CvGstr1CDN"/>
+				<EntitySet Name="CvGstr1ECOMs" EntityType="default.CvGstr1ECOM"/>
+				<EntitySet Name="CvGstr1Exps" EntityType="default.CvGstr1Exp"/>
+				<EntitySet Name="CvGstr1InvNRs" EntityType="default.CvGstr1InvNR"/>
+				<EntitySet Name="CvGstr1Nils" EntityType="default.CvGstr1Nil"/>
+				<EntitySet Name="CvGstr1NilSummarys" EntityType="default.CvGstr1NilSummary"/>
+				<EntitySet Name="CvGstr1TXPDs" EntityType="default.CvGstr1TXPD"/>
+				<EntitySet Name="CvGstr1aB2Bs" EntityType="default.CvGstr1aB2B"/>
+				<EntitySet Name="CvGstr1aCDNs" EntityType="default.CvGstr1aCDN"/>
+				<EntitySet Name="CvInvoiceStatuss" EntityType="default.CvInvoiceStatus"/>
+				<EntitySet Name="CvInvoiceStatus1as" EntityType="default.CvInvoiceStatus1a"/>
+				<EntitySet Name="CvInvoiceTracks" EntityType="default.CvInvoiceTrack"/>
+				<EntitySet Name="GSTR1ACdnItems" EntityType="default.GSTR1ACdnItem"/>
+				<EntitySet Name="GSTR1AInvoiceHeaders" EntityType="default.GSTR1AInvoiceHeader"/>
+				<EntitySet Name="GSTR1AInvoiceItems" EntityType="default.GSTR1AInvoiceItem"/>
+				<EntitySet Name="GSTR1ASectionSumms" EntityType="default.GSTR1ASectionSumm"/>
+				<EntitySet Name="GSTR1B2csSummarys" EntityType="default.GSTR1B2csSummary"/>
+				<EntitySet Name="GSTR1CdnItems" EntityType="default.GSTR1CdnItem"/>
+				<EntitySet Name="GSTR1InvoiceHeaders" EntityType="default.GSTR1InvoiceHeader"/>
+				<EntitySet Name="GSTR1InvoiceItems" EntityType="default.GSTR1InvoiceItem"/>
+				<EntitySet Name="GSTR1InvoiceNumberRanges" EntityType="default.GSTR1InvoiceNumberRange"/>
+				<EntitySet Name="GSTR1InvoiceRecons" EntityType="default.GSTR1InvoiceRecon"/>
+				<EntitySet Name="GSTR1SectionSumms" EntityType="default.GSTR1SectionSumm"/>
+				<EntitySet Name="GSTR1aInvoiceRecons" EntityType="default.GSTR1aInvoiceRecon"/>
+				<EntitySet Name="GSTRInvoiceTransactions" EntityType="default.GSTRInvoiceTransaction"/>
+				<EntitySet Name="GSTRJobDatas" EntityType="default.GSTRJobData"/>
+				<EntitySet Name="GSTRMasters" EntityType="default.GSTRMaster"/>
+				<EntitySet Name="GSTRMasterMains" EntityType="default.GSTRMasterMain"/>
+				<EntitySet Name="GSTRTransactions" EntityType="default.GSTRTransaction"/>
+				<EntitySet Name="SourceTransactions" EntityType="default.SourceTransaction"/>
+				<EntitySet Name="SourceTransactionInvoices" EntityType="default.SourceTransactionInvoice"/>
+				<AssociationSet Name="GSTR1ACdnItem_GSTR1AInvoiceHeader_Many_ZeroToOne0Set"
+					Association="default.GSTR1ACdnItem_GSTR1AInvoiceHeader_Many_ZeroToOne0">
+					<End EntitySet="GSTR1ACdnItems" Role="GSTR1ACdnItem"/>
+					<End EntitySet="GSTR1AInvoiceHeaders" Role="GSTR1AInvoiceHeader"/>
+				</AssociationSet>
+				<AssociationSet Name="GSTR1AInvoiceHeader_GSTR1AInvoiceItem_One_Many0Set"
+					Association="default.GSTR1AInvoiceHeader_GSTR1AInvoiceItem_One_Many0">
+					<End EntitySet="GSTR1AInvoiceHeaders" Role="GSTR1AInvoiceHeader"/>
+					<End EntitySet="GSTR1AInvoiceItems" Role="GSTR1AInvoiceItem"/>
+				</AssociationSet>
+				<AssociationSet Name="GSTR1B2csSummary_GSTRTransaction_Many_ZeroToOne0Set"
+					Association="default.GSTR1B2csSummary_GSTRTransaction_Many_ZeroToOne0">
+					<End EntitySet="GSTR1B2csSummarys" Role="GSTR1B2csSummary"/>
+					<End EntitySet="GSTRTransactions" Role="GSTRTransaction"/>
+				</AssociationSet>
+				<AssociationSet Name="GSTR1CdnItem_GSTR1InvoiceHeader_Many_ZeroToOne0Set"
+					Association="default.GSTR1CdnItem_GSTR1InvoiceHeader_Many_ZeroToOne0">
+					<End EntitySet="GSTR1CdnItems" Role="GSTR1CdnItem"/>
+					<End EntitySet="GSTR1InvoiceHeaders" Role="GSTR1InvoiceHeader"/>
+				</AssociationSet>
+				<AssociationSet Name="GSTR1InvoiceHeader_GSTR1InvoiceItem_One_Many0Set" Association="default.GSTR1InvoiceHeader_GSTR1InvoiceItem_One_Many0">
+					<End EntitySet="GSTR1InvoiceHeaders" Role="GSTR1InvoiceHeader"/>
+					<End EntitySet="GSTR1InvoiceItems" Role="GSTR1InvoiceItem"/>
+				</AssociationSet>
+				<AssociationSet Name="GSTR1InvoiceNumberRange_GSTRMaster_Many_ZeroToOne0Set"
+					Association="default.GSTR1InvoiceNumberRange_GSTRMaster_Many_ZeroToOne0">
+					<End EntitySet="GSTR1InvoiceNumberRanges" Role="GSTR1InvoiceNumberRange"/>
+					<End EntitySet="GSTRMasters" Role="GSTRMaster"/>
+				</AssociationSet>
+				<AssociationSet Name="GSTR1InvoiceHeader_GSTRInvoiceTransaction_One_Many0Set"
+					Association="default.GSTR1InvoiceHeader_GSTRInvoiceTransaction_One_Many0">
+					<End EntitySet="GSTR1InvoiceHeaders" Role="GSTR1InvoiceHeader"/>
+					<End EntitySet="GSTRInvoiceTransactions" Role="GSTRInvoiceTransaction"/>
+				</AssociationSet>
+				<AssociationSet Name="GSTR1AInvoiceHeader_GSTRInvoiceTransaction_One_Many0Set"
+					Association="default.GSTR1AInvoiceHeader_GSTRInvoiceTransaction_One_Many0">
+					<End EntitySet="GSTR1AInvoiceHeaders" Role="GSTR1AInvoiceHeader"/>
+					<End EntitySet="GSTRInvoiceTransactions" Role="GSTRInvoiceTransaction"/>
+				</AssociationSet>
+				<AssociationSet Name="GSTRInvoiceTransaction_GSTRTransaction_Many_ZeroToOne0Set"
+					Association="default.GSTRInvoiceTransaction_GSTRTransaction_Many_ZeroToOne0">
+					<End EntitySet="GSTRInvoiceTransactions" Role="GSTRInvoiceTransaction"/>
+					<End EntitySet="GSTRTransactions" Role="GSTRTransaction"/>
+				</AssociationSet>
+				<AssociationSet Name="GSTRMaster_GSTRMasterMain_Many_ZeroToOne0Set" Association="default.GSTRMaster_GSTRMasterMain_Many_ZeroToOne0">
+					<End EntitySet="GSTRMasters" Role="GSTRMaster"/>
+					<End EntitySet="GSTRMasterMains" Role="GSTRMasterMain"/>
+				</AssociationSet>
+				<AssociationSet Name="GSTRMaster_GSTRTransaction_One_Many0Set" Association="default.GSTRMaster_GSTRTransaction_One_Many0">
+					<End EntitySet="GSTRMasters" Role="GSTRMaster"/>
+					<End EntitySet="GSTRTransactions" Role="GSTRTransaction"/>
+				</AssociationSet>
+				<AssociationSet Name="GSTR1InvoiceHeader_SourceTransactionInvoice_One_Many0Set"
+					Association="default.GSTR1InvoiceHeader_SourceTransactionInvoice_One_Many0">
+					<End EntitySet="GSTR1InvoiceHeaders" Role="GSTR1InvoiceHeader"/>
+					<End EntitySet="SourceTransactionInvoices" Role="SourceTransactionInvoice"/>
+				</AssociationSet>
+				<AssociationSet Name="SourceTransaction_SourceTransactionInvoice_One_Many0Set"
+					Association="default.SourceTransaction_SourceTransactionInvoice_One_Many0">
+					<End EntitySet="SourceTransactions" Role="SourceTransaction"/>
+					<End EntitySet="SourceTransactionInvoices" Role="SourceTransactionInvoice"/>
+				</AssociationSet>
+				<FunctionImport Name="saveGSTR" ReturnType="default.StatusResponse" m:HttpMethod="GET">
+					<Parameter Name="transactionId" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="supplierGSTIN" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="finPeriod" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="gstrType" Type="Edm.String" Nullable="true"/>
+				</FunctionImport>
+				<FunctionImport Name="createTransaction" ReturnType="default.StatusResponse" m:HttpMethod="GET">
+					<Parameter Name="supplierGSTIN" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="finPeriod" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="gstrType" Type="Edm.String" Nullable="true"/>
+				</FunctionImport>
+				<FunctionImport Name="Gstr1B2bTransactions" ReturnType="Collection(default.CvGstr1B2B)" EntitySet="CvGstr1B2Bs" m:HttpMethod="GET">
+					<Parameter Name="transactionId" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="supplierGSTIN" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="finPeriod" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="ccAmendFlag" Type="Edm.String" Nullable="true"/>
+				</FunctionImport>
+				<FunctionImport Name="Gstr1aB2bTransactions" ReturnType="Collection(default.CvGstr1aB2B)" EntitySet="CvGstr1aB2Bs" m:HttpMethod="GET">
+					<Parameter Name="transactionId" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="supplierGSTIN" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="finPeriod" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="ccAmendFlag" Type="Edm.String" Nullable="true"/>
+				</FunctionImport>
+				<FunctionImport Name="Gstr1ATTransactions" ReturnType="Collection(default.CvGstr1AT)" EntitySet="CvGstr1ATs" m:HttpMethod="GET">
+					<Parameter Name="transactionId" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="supplierGSTIN" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="finPeriod" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="ccAmendFlag" Type="Edm.String" Nullable="true"/>
+				</FunctionImport>
+				<FunctionImport Name="Gstr1B2CLTransactions" ReturnType="Collection(default.CvGstr1B2CL)" EntitySet="CvGstr1B2CLs" m:HttpMethod="GET">
+					<Parameter Name="transactionId" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="supplierGSTIN" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="finPeriod" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="ccAmendFlag" Type="Edm.String" Nullable="true"/>
+				</FunctionImport>
+				<FunctionImport Name="Gstr1B2CSTransactions" ReturnType="Collection(default.CvGstr1B2CS)" EntitySet="CvGstr1B2CSs" m:HttpMethod="GET">
+					<Parameter Name="transactionId" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="supplierGSTIN" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="finPeriod" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="ccAmendFlag" Type="Edm.String" Nullable="true"/>
+				</FunctionImport>
+				<FunctionImport Name="Gstr1B2CSSummaryTransactions" ReturnType="Collection(default.CvGstr1B2CSSummary)" EntitySet="CvGstr1B2CSSummarys"
+					m:HttpMethod="GET">
+					<Parameter Name="transactionId" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="supplierGSTIN" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="finPeriod" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="ccAmendFlag" Type="Edm.String" Nullable="true"/>
+				</FunctionImport>
+				<FunctionImport Name="Gstr1CDNTransactions" ReturnType="Collection(default.CvGstr1CDN)" EntitySet="CvGstr1CDNs" m:HttpMethod="GET">
+					<Parameter Name="transactionId" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="supplierGSTIN" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="finPeriod" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="ccAmendFlag" Type="Edm.String" Nullable="true"/>
+				</FunctionImport>
+				<FunctionImport Name="Gstr1aCDNTransactions" ReturnType="Collection(default.CvGstr1aCDN)" EntitySet="CvGstr1aCDNs" m:HttpMethod="GET">
+					<Parameter Name="transactionId" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="supplierGSTIN" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="finPeriod" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="ccAmendFlag" Type="Edm.String" Nullable="true"/>
+				</FunctionImport>
+				<FunctionImport Name="Gstr1ECOMTransactions" ReturnType="Collection(default.CvGstr1ECOM)" EntitySet="CvGstr1ECOMs" m:HttpMethod="GET">
+					<Parameter Name="transactionId" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="supplierGSTIN" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="finPeriod" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="ccAmendFlag" Type="Edm.String" Nullable="true"/>
+				</FunctionImport>
+				<FunctionImport Name="Gstr1ExpTransactions" ReturnType="Collection(default.CvGstr1Exp)" EntitySet="CvGstr1Exps" m:HttpMethod="GET">
+					<Parameter Name="transactionId" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="supplierGSTIN" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="finPeriod" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="ccAmendFlag" Type="Edm.String" Nullable="true"/>
+				</FunctionImport>
+				<FunctionImport Name="Gstr1NilTransactions" ReturnType="Collection(default.CvGstr1Nil)" EntitySet="CvGstr1Nils" m:HttpMethod="GET">
+					<Parameter Name="transactionId" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="supplierGSTIN" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="finPeriod" Type="Edm.String" Nullable="true"/>
+				</FunctionImport>
+				<FunctionImport Name="Gstr1NilSummaryTransactions" ReturnType="Collection(default.CvGstr1NilSummary)" EntitySet="CvGstr1NilSummarys"
+					m:HttpMethod="GET">
+					<Parameter Name="transactionId" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="supplierGSTIN" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="finPeriod" Type="Edm.String" Nullable="true"/>
+				</FunctionImport>
+				<FunctionImport Name="Gstr1TXPDTransactions" ReturnType="Collection(default.CvGstr1TXPD)" EntitySet="CvGstr1TXPDs" m:HttpMethod="GET">
+					<Parameter Name="transactionId" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="supplierGSTIN" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="finPeriod" Type="Edm.String" Nullable="true"/>
+				</FunctionImport>
+				<FunctionImport Name="GSTR1InvoiceReconTransactions" ReturnType="Collection(default.GSTR1InvoiceRecon)" EntitySet="GSTR1InvoiceRecons"
+					m:HttpMethod="GET">
+					<Parameter Name="transactionId" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="supplierGSTIN" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="finPeriod" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="ccErrorType" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="ccErrorOnHold" Type="Edm.String" Nullable="true"/>
+				</FunctionImport>
+				<FunctionImport Name="GSTR1aInvoiceReconTransactions" ReturnType="Collection(default.GSTR1aInvoiceRecon)" EntitySet="GSTR1aInvoiceRecons"
+					m:HttpMethod="GET">
+					<Parameter Name="supplierGSTIN" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="finPeriod" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="ccErrorType" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="ccErrorOnHold" Type="Edm.String" Nullable="true"/>
+				</FunctionImport>
+				<FunctionImport Name="GSTR1SectionSummTransactions" ReturnType="Collection(default.GSTR1SectionSumm)" EntitySet="GSTR1SectionSumms"
+					m:HttpMethod="GET">
+					<Parameter Name="transactionId" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="supplierGSTIN" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="finPeriod" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="ccSectionType" Type="Edm.String" Nullable="true"/>
+				</FunctionImport>
+				<FunctionImport Name="GSTR1aSectionSummTransactions" ReturnType="Collection(default.GSTR1ASectionSumm)" EntitySet="GSTR1ASectionSumms"
+					m:HttpMethod="GET">
+					<Parameter Name="transactionId" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="supplierGSTIN" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="finPeriod" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="ccSectionType" Type="Edm.String" Nullable="true"/>
+				</FunctionImport>
+				<FunctionImport Name="InvoiceStatus" ReturnType="Collection(default.CvInvoiceStatus)" EntitySet="CvInvoiceStatuss" m:HttpMethod="GET">
+					<Parameter Name="supplierGSTIN" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="finPeriod" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="gstrType" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="filters" Type="Edm.String" Nullable="true"/>
+				</FunctionImport>
+				<FunctionImport Name="InvoiceStatus1a" ReturnType="Collection(default.CvInvoiceStatus1a)" EntitySet="CvInvoiceStatus1as" m:HttpMethod="GET">
+					<Parameter Name="supplierGSTIN" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="finPeriod" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="gstrType" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="filters" Type="Edm.String" Nullable="true"/>
+				</FunctionImport>
+				<FunctionImport Name="GSTR1InvoiceTrack" ReturnType="Collection(default.CvInvoiceTrack)" EntitySet="CvInvoiceTracks" m:HttpMethod="GET">
+					<Parameter Name="supplierGSTIN" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="finPeriod" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="invNum" Type="Edm.String" Nullable="true"/>
+					<Parameter Name="filters" Type="Edm.String" Nullable="true"/>
+				</FunctionImport>
+				<FunctionImport Name="readDocStoreFile" ReturnType="Edm.String" m:HttpMethod="GET">
+					<Parameter Name="fileID" Type="Edm.String" Nullable="true"/>
+				</FunctionImport>
+				<FunctionImport Name="updateTransactions" ReturnType="Edm.String" m:HttpMethod="GET"/>
+				<FunctionImport Name="StartGSTRJob" ReturnType="default.StatusResponse" m:HttpMethod="GET">
+					<Parameter Name="jobId" Type="Edm.String" Nullable="true"/>
+				</FunctionImport>
+				<FunctionImport Name="StopGSTRJob" ReturnType="default.StatusResponse" m:HttpMethod="GET">
+					<Parameter Name="jobId" Type="Edm.String" Nullable="true"/>
+				</FunctionImport>
+			</EntityContainer>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

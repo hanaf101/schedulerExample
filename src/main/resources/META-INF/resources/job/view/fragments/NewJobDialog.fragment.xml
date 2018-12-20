@@ -1,0 +1,42 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns="sap.m">
+	<Dialog class="sapUiContentPadding"  id="newJobAddDialog" title="{i18n>newJobAddTitle}" stretch="jQuery.device.is.phone">
+		<content>
+			<l:VerticalLayout width="100%">
+				<Label design="Bold"  text="Job Id"/>
+				<Input id="newJobId"  class="sapUiSmallMarginBottom" type="Number"   />
+				<Label design="Bold"  text="Job Name"/>
+				<Input id="newJobName"   class="sapUiSmallMarginBottom"/>
+				<Label design="Bold"  text="Priority" type="Integer"/>
+				<Input id="newJobPriority"   class="sapUiSmallMarginBottom"/>
+				<Label design="Bold"  text="Event Type"/>
+				<ComboBox id="newJobEventId" selectionChange="OnChangeValue" width="100%" items="{eventData>/events}" showSecondaryValues="true"
+					class="sapUiSmallMarginBottom">
+					<core:ListItem id="eventType" text="{eventData>eventName}" key="{eventData>eventId}"/>
+				</ComboBox>
+				
+				<Label design="Bold"  text="Job Type"/>
+				<ComboBox id="newJobTypeId" selectionChange="OnChangeValue" width="100%" items="{jobType>/types}" showSecondaryValues="true"
+					class="sapUiSmallMarginBottom">
+					<core:ListItem id="eventType1" text="{jobType>name}" key="{jobType>type}"/>
+				</ComboBox>
+				
+				<Label design="Bold"  text="Recurring"/>
+				<ComboBox id="newJobRecurring" selectionChange="OnChangeValue" width="100%"  showSecondaryValues="true"
+					class="sapUiSmallMarginBottom">
+					<core:ListItem  text="Yes" key="true"/>
+					<core:ListItem text="No" key="false"/>
+				</ComboBox>
+				
+			
+				<Label design="Bold"  text="{i18n>jobDurationDialogDaysLbl}:"/>
+				<Input id="newJobDurationDialogDaysInp" class="sapUiSmallMarginBottom"/>
+				<Label design="Bold"  text="{i18n>jobDurationDialogDurationsLbl}:"/>
+				<TimePicker displayFormat="HH:mm:ss" id="newJobDurationDialogDurationsInp" width="100%" valueFormat="HH:mm:ss"/>
+			</l:VerticalLayout>
+		</content>
+		<buttons>
+			<Button press="onSaveNewJob" text="{i18n>configDialogSaveBtn}" type="Transparent"/>
+			<Button press="onAddJobDialogCancel" text="{i18n>configDialogCancelBtn}"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

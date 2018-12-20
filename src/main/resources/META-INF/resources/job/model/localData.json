@@ -1,0 +1,24 @@
+{
+	"JobTypes": [{
+		"JobType": "TRANS_CREATE",
+		"Description": "Create Transaction"
+	}, {
+		"JobType": "TRANS_SAVE",
+		"Description": "Save Transaction"
+	}, {
+		"JobType": "TRANS_GETSTATUS",
+		"Description": "Get Status of Transaction"
+	}, {
+		"JobType": "GSTR1A_PULL",
+		"Description": "Pull GSTR1A"
+	}],
+
+	"GstrTypes": [{
+		"GstrType": "GSTR1",
+		"Description": "GSTR1"
+	}, {
+		"GstrType": "GSTR1A",
+		"Description": "GSTR1A"
+	}],
+	"SourceTypes": []
+}
