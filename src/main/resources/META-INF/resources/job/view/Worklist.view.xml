@@ -1,0 +1,200 @@
+<mvc:View
+	controllerName="com.scheduler.sample.ui.controller.Worklist"
+	xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:semantic="sap.m.semantic"
+	xmlns:footerbar="sap.ushell.ui.footerbar" xmlns:l="sap.ui.layout">
+	<semantic:FullscreenPage id="jobDetailsPage"
+		busy="{detailView>/busy}" navButtonPress="onNavBack"
+		showNavButton="true" title="{i18n>masterTitle}" showFooter="false">
+		<semantic:content>
+			<!-- <Table class="sapUiResponsiveMargin" width="auto" noDataText="{i18n>Nodatatext}" 
+				growing="true" growingThreshold="20" growingScrollToLoad="true" id="table" 
+				items="{ path : '/GSTRJobDatas'}" updateFinished="onTableupdate"> <headerToolbar 
+				id="jobDetailsTable_headerToolbar"> <OverflowToolbar id="jobDetailsTable_headerToolbar_toolbar"> 
+				<SegmentedButton id="jobfilterbtn" selectedKey="all" select="onJobStatusPress"> 
+				<items> <SegmentedButtonItem id="all" key="all" width="auto" text="{i18n>allbtn}"></SegmentedButtonItem> 
+				<SegmentedButtonItem id="start" key="start" width="auto" text="{i18n>Startedbtn}"></SegmentedButtonItem> 
+				<SegmentedButtonItem id="stop" key="stop" width="auto" text="{i18n>Stoppedbtn}"></SegmentedButtonItem> 
+				</items> <layoutData><OverflowToolbarLayoutData minWidth="200px" maxWidth="300px" 
+				shrinkable="true"/></layoutData> </SegmentedButton> <ToolbarSpacer/> <SearchField 
+				id="jobSearchField" placeholder="{i18n>jobSearchPlaceholder}" search="onJobSearchPressed" 
+				showRefreshButton="false" tooltip="{i18n>jobSearchTooltip}"> <layoutData><OverflowToolbarLayoutData 
+				minWidth="200px" maxWidth="300px" shrinkable="true"/></layoutData> </SearchField> 
+				<OverflowToolbarButton id="jobAddBtn" text="{i18n>jobAddBtnTxt}" icon="sap-icon://add" 
+				press="onJobAdd" tooltip="{i18n>jobAddBtnToolTip}" type="Transparent"></OverflowToolbarButton> 
+				</OverflowToolbar> </headerToolbar> <columns id="jobDetailsTable_columns"> 
+				<Column demandPopin="false" id="jobDetailsTable_columns_col1" minScreenWidth="" 
+				vAlign="Middle" width="15%"> <header id="jobDetailsTable_columns_col1_header"> 
+				<Text id="jobDetailsTable_columns_col1_header_label" text="{i18n>SupplierGSTINLbl}"/> 
+				</header> </Column> <Column demandPopin="true" id="jobDetailsTable_columns_col2" 
+				minScreenWidth="Tablet" vAlign="Middle"> <header id="jobDetailsTable_columns_col2_header"> 
+				<Text id="jobDetailsTable_columns_col2_header_label" text="{i18n>FinPeriodLbl}"/> 
+				</header> </Column> <Column demandPopin="true" id="jobDetailsTable_columns_col21" 
+				minScreenWidth="Tablet" vAlign="Middle"> <header id="jobDetailsTable_columns_col21_header"> 
+				<Text id="jobDetailsTable_columns_col21_header_label" text="{i18n>GstrTypeLbl}"/> 
+				</header> </Column> <Column demandPopin="true" width="20%" id="jobDetailsTable_columns_col3" 
+				minScreenWidth="Tablet" vAlign="Middle"> <header id="jobDetailsTable_columns_col3_header"> 
+				<Text id="jobDetailsTable_columns_col3_header_label" text="{i18n>JobTypeLbl}"/> 
+				</header> </Column> <Column demandPopin="true" id="jobDetailsTable_columns_col4" 
+				minScreenWidth="Tablet" vAlign="Middle"> <header id="jobDetailsTable_columns_col4_header"> 
+				<Text id="jobDetailsTable_columns_col4_header_label" text="{i18n>JobStatusLbl}"/> 
+				</header> </Column> <Column demandPopin="true" id="jobDetailsTable_columns_col5" 
+				minScreenWidth="Tablet" vAlign="Middle"> <header id="jobDetailsTable_columns_col5_header"> 
+				<Text id="jobDetailsTable_columns_col5_header_label" text="{i18n>durationLbl}"/> 
+				</header> </Column> <Column demandPopin="true" hAlign="Center" id="jobDetailsTable_columns_col6" 
+				minScreenWidth="Tablet" vAlign="Top"/> </columns> <ColumnListItem id="jobDetailsListItem"> 
+				<cells id="jobDetailsListItem_cells"> <ObjectIdentifier id="jobDetailsListItem_cells_cell_1" 
+				title="{SupplierGSTIN}"/> <Text id="jobDetailsListItem_cells_cell_2" text="{path 
+				: 'FinancialPeriod', formatter : '.formatFinPeriod'}"/> <Text id="jobDetailsListItem_cells_cell_21" 
+				text="{GstrType}"/> <Text id="jobDetailsListItem_cells_cell_3" text="{path 
+				: 'JobType', formatter : '.formatJobType'}"/> <ObjectStatus id="jobDetailsListItem_cells_cell_4" 
+				state="{path:'JobStatus', formatter:'.formatStatusState'}" text="{path : 
+				'JobStatus', formatter : '.formatStatusText'}"/> <Text id="jobDetailsListItem_cells_cell_5" 
+				text="{path : 'Duration', formatter : '.formatDuration'}"/> <HBox> <Button 
+				enabled="{ path:'JobStatus', formatter:'.formatStartBtn' }" icon="sap-icon://media-play" 
+				id="startbtn" press="onStartJob" tooltip="{i18n>startBtnTooltip}" type="Transparent"/> 
+				<Button enabled="{ path:'JobStatus', formatter:'.formatStopBtn' }" icon="sap-icon://stop" 
+				id="stopbtn" press="onStopJob" tooltip="{i18n>stopBtnTooltip}" type="Transparent"/> 
+				<Button enabled="{ path:'JobStatus', formatter:'.formatEditBtn' }" icon="sap-icon://edit" 
+				id="editbtn" press="onEditJob" tooltip="{i18n>editBtnTooltip}" type="Transparent"/> 
+				</HBox> </cells> </ColumnListItem> </Table> -->
+
+
+			<Table class="sapUiResponsiveMargin" width="auto"
+				noDataText="{i18n>Nodatatext}" growing="true" growingThreshold="20"
+				growingScrollToLoad="true" id="table"
+				items="{path:'tableData>/data'}" updateFinished="onTableupdate">
+				<headerToolbar id="jobDetailsTable_headerToolbar">
+					<OverflowToolbar
+						id="jobDetailsTable_headerToolbar_toolbar">
+						<SegmentedButton id="jobfilterbtn"
+							selectedKey="all" select="onJobStatusPress">
+							<items>
+								<SegmentedButtonItem id="all" key="all"
+									width="auto" text="{i18n>allbtn}"></SegmentedButtonItem>
+								<SegmentedButtonItem id="start" key="start"
+									width="auto" text="{i18n>Startedbtn}"></SegmentedButtonItem>
+								<SegmentedButtonItem id="stop" key="stop"
+									width="auto" text="{i18n>Stoppedbtn}"></SegmentedButtonItem>
+							</items>
+							<layoutData>
+								<OverflowToolbarLayoutData
+									minWidth="200px" maxWidth="300px" shrinkable="true" />
+							</layoutData>
+						</SegmentedButton>
+						<ToolbarSpacer />
+						<SearchField id="jobSearchField"
+							placeholder="{i18n>jobSearchPlaceholder}"
+							search="onJobSearchPressed" showRefreshButton="false"
+							tooltip="{i18n>jobSearchTooltip}">
+							<layoutData>
+								<OverflowToolbarLayoutData
+									minWidth="200px" maxWidth="300px" shrinkable="true" />
+							</layoutData>
+						</SearchField>
+						<OverflowToolbarButton id="jobAddBtn"
+							text="{i18n>jobAddBtnTxt}" icon="sap-icon://add" press="onJobAdd"
+							tooltip="{i18n>jobAddBtnToolTip}" type="Transparent"></OverflowToolbarButton>
+							
+							<OverflowToolbarButton icon="sap-icon://refresh" text="Refresh" tooltip="Refresh" press="onRefresh"/>
+					</OverflowToolbar>
+				</headerToolbar>
+				<columns>
+					<Column width="9em">
+						<header>
+							<Text text="Job" />
+						</header>
+					</Column>
+
+
+					<Column width="9em">
+						<header>
+							<Text text="Event Type" />
+						</header>
+					</Column>
+
+					<Column width="9em" hAlign="Center">
+						<header>
+							<Text text="State" />
+						</header>
+					</Column>
+
+					<Column width="9em">
+						<header>
+							<Text text="Last Executed At" />
+						</header>
+					</Column>
+
+					<Column width="9em" hAlign="Center" >
+						<header>
+							<Text text="Last Execution Status" />
+						</header>
+					</Column>
+
+					<Column width="9em">
+						<header>
+							<Text text="Duration" />
+						</header>
+					</Column>
+
+					<Column width="9em">
+						<header>
+							<Text text="Recursive" />
+						</header>
+					</Column>
+
+					<Column width="9em">
+						<header>
+							<Text text="" />
+						</header>
+					</Column>
+
+
+
+				</columns>
+
+				<ColumnListItem>
+					<cells>
+						<ObjectIdentifier title="{tableData>jobId}"
+							text="{tableData>jobName}" />
+						<!-- <Text text="{'tableData>eventType', formatter:'.formatEventType' 
+							}" /> -->
+						<Text
+							text="{path: 'tableData>eventType', formatter : '.formatEventType'}" />
+						<!-- <Text text="{tableData>state}" /> -->
+						<ObjectStatus state="{path:'tableData>state', formatter:'.formatStatusState'}"
+							text="{path : 'tableData>state', formatter : '.formatStatusText'}" />
+						<Text text="{tableData>lastExecutedAt}" /> <!-- 
+						 <Text text="{path: 'tableData>lastExecutionStatus', formatter: '.DateFormat'}" />  -->
+						 
+<!-- 						 <Text text="{path : 'tableData>lastExecutedAt', 
+             type : 'sap.ui.model.type.DateTime',
+             formatOptions: { style : 'medium'}}" /> -->
+             
+						<ObjectStatus state="{path:'tableData>lastExecutionStatus', formatter:'.formatExecutionStatusState'}"
+							text="{path : 'tableData>lastExecutionStatus', formatter : '.formatExecutionStatusText'}" />
+						<!--  <Text text="{tableData>duration}" />-->
+						<!--  <Text id="jobDetailsListItem_cells_cell_5" text="{path : 'Duration', formatter : '.formatDuration'}"/> -->
+						<Text id="jobDetailsListItem_cells_cell_5" text="{path : 'tableData>duration', formatter : '.formatDuration'}"/>
+						<Text text="{path : 'tableData>recurring', formatter : '.formatRecurringText'}" />
+						<HBox>
+							<Button
+								enabled="{parts: ['tableData>state','tableData>jobType'], formatter: '.formatStartBtn'}"
+								icon="sap-icon://media-play" id="startbtn" press="onStartJob"
+								tooltip="{i18n>startBtnTooltip}" type="Transparent" />
+							<Button
+								enabled="{parts: ['tableData>state','tableData>jobType'], formatter: '.formatStopBtn'}"
+								icon="sap-icon://stop" id="stopbtn" press="onStopJob"
+								tooltip="{i18n>stopBtnTooltip}" type="Transparent" />
+							<Button
+								enabled="{ 'tableData>state', formatter:'.formatEditBtn' }"
+								icon="sap-icon://edit" id="editbtn" press="onEditJob"
+								tooltip="{i18n>editBtnTooltip}" type="Transparent" />
+						</HBox>
+					</cells>
+				</ColumnListItem>
+
+			</Table>
+		</semantic:content>
+	</semantic:FullscreenPage>
+</mvc:View>

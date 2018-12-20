@@ -1,0 +1,40 @@
+{
+  "welcomeFile": "/webapp/index.html",
+  "routes": [
+    {
+      "path": "/resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/resources"
+      },
+      "description": "SAPUI5 Resources"
+    },
+    {
+      "path": "/test-resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/test-resources"
+      },
+      "description": "SAPUI5 Test Resources"
+    },
+    {
+      "path": "/dcsruoperator/",
+      "target": {
+        "type": "destination",
+        "name": "DCS_METERING"
+      },
+      "description": "DCS_METERING"
+    },
+    {
+      "path": "/dcsruoperatorExcel/",
+      "target": {
+        "type": "destination",
+        "name": "DCS_METERING_EXCEL"
+      },
+      "description": "DCS_METERING_EXCEL"
+    }
+  ],
+  "sendWelcomeFileRedirect": true
+}
