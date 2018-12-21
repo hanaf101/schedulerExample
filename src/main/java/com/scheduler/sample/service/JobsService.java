@@ -1,3 +1,4 @@
+
 package com.scheduler.sample.service;
 
 import java.util.List;
@@ -35,3 +36,4 @@ public interface JobsService {
 	StatusResponse rescheduleJob(long jobId, String jobName, int duration, long userId);
 
 }
+

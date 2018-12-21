@@ -1,3 +1,4 @@
+
 package com.scheduler.sample.model;
 
 import javax.persistence.CascadeType;

@@ -1,3 +1,4 @@
+
 package com.scheduler.sample.repository;
 
 import org.springframework.data.repository.CrudRepository;

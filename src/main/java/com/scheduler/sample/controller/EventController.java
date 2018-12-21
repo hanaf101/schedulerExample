@@ -1,3 +1,4 @@
+
 package com.scheduler.sample.controller;
 
 import java.util.ArrayList;
@@ -66,3 +67,4 @@ public class EventController {
 	}
 
 }
+

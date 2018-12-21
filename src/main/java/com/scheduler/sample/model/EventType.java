@@ -1,3 +1,4 @@
+
 package com.scheduler.sample.model;
 
 import javax.persistence.Column;
@@ -20,3 +21,4 @@ public class EventType {
 	private String eventName;
 	
 }
+

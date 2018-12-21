@@ -1,3 +1,4 @@
+
 package com.scheduler.sample.model;
 
 
@@ -37,3 +38,4 @@ public class Event {
 	    private EventType eventType;
 
 }
+

@@ -1,3 +1,4 @@
+
 package com.scheduler.sample.service;
 
 import java.sql.Timestamp;
@@ -336,3 +337,4 @@ public class JobsServiceImpl implements JobsService {
 	}
 
 }
+

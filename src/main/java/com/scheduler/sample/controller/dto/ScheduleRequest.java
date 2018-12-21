@@ -1,3 +1,4 @@
+
 package com.scheduler.sample.controller.dto;
 
 import java.sql.Timestamp;

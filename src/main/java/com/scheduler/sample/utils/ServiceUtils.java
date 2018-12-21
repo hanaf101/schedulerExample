@@ -1,5 +1,6 @@
 package com.scheduler.sample.utils;
 
+
 import org.apache.commons.codec.binary.Base64;
 
 
@@ -25,5 +26,6 @@ public class ServiceUtils {
 		
 	}
 	
-
 }
+
+
