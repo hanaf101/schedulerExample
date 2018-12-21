@@ -4,10 +4,11 @@ sap.ui
 			"sap/ui/model/json/JSONModel",
 			"sap/ui/core/routing/History",
 			"com/scheduler/sample/ui/model/formatter",
-			"sap/ui/model/Filter", "sap/ui/model/FilterOperator"
+			"sap/ui/model/Filter", "sap/ui/model/FilterOperator",
+			"sap/m/MessageToast"
 		],
 		function(BaseController, JSONModel, History, formatter, Filter,
-			FilterOperator) {
+			FilterOperator, MessageToast) {
 			"use strict";
 
 			/* =========================================================== */
@@ -259,6 +260,7 @@ sap.ui
 										that._oJobAddDialogFragment
 											.destroy();
 										that._oJobAddDialogFragment = null;
+										MessageToast.show("Job Saved Successfully, Please refresh page to see changes");
 
 									},
 									error: function(jqXHR,
@@ -488,7 +490,13 @@ sap.ui
 										sText = "Failed";
 										break;
 									}
+								case "FAILED":
+								{
+									sText = "Failed";
+									break;
+								}
 							}
+							
 							return sText;
 						},
 
@@ -666,8 +674,10 @@ sap.ui
 									data: JSON.stringify(oNewJobEntry),
 									dataType: "json",
 									success: function(oResponse) {
-										sap.m.MessageToast("Job modified successfully");
+//										sap.m.MessageToast("Job modified successfully");
 										that.getModel("tableData").refresh(true);
+
+										MessageToast.show("OPeration Executed Successfully.  Please refresh page to see changes");
 
 									},
 									error: function(jqXHR,
@@ -830,4 +840,5 @@ sap.ui
 							}
 						}
 
-					});					});
+					});			
+			});

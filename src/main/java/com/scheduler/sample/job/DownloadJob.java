@@ -59,8 +59,8 @@ public class DownloadJob implements BaseJob {
 				in = new URL(fileURL).openStream();
 				Files.copy(in, Paths.get(fileName), StandardCopyOption.REPLACE_EXISTING);
 				currentJob.setLastExecutionStatus("SUCCESS");
-			} catch (IOException e) {
-				currentJob.setLastExecutionStatus("FAILS");	
+			} catch (IOException | NullPointerException e) {
+				currentJob.setLastExecutionStatus("FAILED");	
 				e.printStackTrace();
 				System.out.println("exception :  " + e.getMessage());
 			} finally {
